@@ -13,7 +13,7 @@ manager.add_command('db', MigrateCommand)
 @manager.command
 def run():
     """启动app"""
-    app.run(debug=True, port=6666)
+    app.run(debug=True, port=10000)
 
 
 @manager.command

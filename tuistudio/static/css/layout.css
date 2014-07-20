@@ -1,3 +1,8 @@
+@media (min-width: 1200px) {
+  .container {
+    width: 980px;
+  }
+}
 .flash-message {
   background-color: #3fa7cb;
   border: 0;
@@ -27,4 +32,7 @@
 .navbar-form {
   width: 300px;
   margin: 10px 0;
+}
+.navbar {
+  margin-bottom: 0;
 }
