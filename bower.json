@@ -1,0 +1,16 @@
+{
+  "name": "tuistudio.com",
+  "version": "0.0.1",
+  "homepage": "https://github.com/tuistudio/tuistudio.com",
+  "authors": [
+    "hustlzp <hustlzp@qq.com>"
+  ],
+  "description": "Official website for TUI Studio.",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "~3.1.1",
+    "font-awesome": "~4.1.0",
+    "respond": "~1.4.2"
+  }
+}

@@ -1,0 +1,17 @@
+Flask
+Flask-WTF
+Flask-Script
+Flask-SQLAlchemy
+flask-debugtoolbar
+Flask-Uploads
+Flask-Mail
+Flask-Migrate
+
+MySQL-python
+Pillow
+
+gunicorn
+fabric
+
+raven
+blinker
