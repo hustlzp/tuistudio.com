@@ -7,6 +7,7 @@ def deploy():
     with cd('/var/www/project'):
         run('git pull')
         run('bower install')
+        run('bower update')
         with prefix('source venv/bin/activate'):
             run('pip install -r requirements.txt')
         run('sudo supervisorctl restart project')
