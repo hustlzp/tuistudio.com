@@ -6,8 +6,8 @@ def deploy():
     env.host_string = config.HOST_STRING
     with cd('/var/www/project'):
         run('git pull')
-        run('bower install')
-        run('bower update')
+        run('bower install --allow-root')
+        run('bower update --allow-root')
         with prefix('source venv/bin/activate'):
             run('pip install -r requirements.txt')
         run('sudo supervisorctl restart project')
