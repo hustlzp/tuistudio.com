@@ -29,10 +29,12 @@
   color: #555;
   background-color: #e7e7e7;
 }
-.navbar-form {
-  width: 300px;
-  margin: 10px 0;
-}
 .navbar {
   margin-bottom: 0;
+  background-color: white;
+  border-bottom: 1px solid #dddddd;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.navbar .navbar-nav.navbar-right:last-child {
+  margin-right: 10px;
 }
