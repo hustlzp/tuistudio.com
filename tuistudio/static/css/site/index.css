@@ -29,15 +29,12 @@
   padding-bottom: 30px;
   border-bottom: 1px solid #dddddd;
 }
-#page-index .works .title {
-  margin-bottom: 20px;
-}
 #page-index .works img {
   display: inline-block;
   height: 47px;
 }
 #page-index .works img.aod {
-  height: 42px;
+  height: 45px;
   margin-right: 100px;
 }
 #page-index .works img.lemaker {
