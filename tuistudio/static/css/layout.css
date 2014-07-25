@@ -3,8 +3,14 @@
     width: 980px;
   }
 }
+a {
+  color: #333333;
+}
+a:hover {
+  color: #36a9e5;
+}
 .flash-message {
-  background-color: #3fa7cb;
+  background-color: #36a9e5;
   border: 0;
   color: #ffffff;
   margin-bottom: 0;
@@ -34,6 +40,21 @@
   background-color: white;
   border-bottom: 1px solid #dddddd;
 }
+.navbar .navbar-brand {
+  display: inline-block;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.navbar .navbar-nav > li > a {
+  padding: 30px 20px;
+}
+.navbar .navbar-nav > li > a:hover {
+  background-color: transparent;
+}
+.navbar .navbar-btn {
+  margin-top: 23px;
+  padding: 7px 12px;
+}
 .navbar .navbar-nav.navbar-right:last-child {
-  margin-right: 10px;
+  margin-right: 20px;
 }

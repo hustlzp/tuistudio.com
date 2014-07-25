@@ -7,7 +7,7 @@
 {% endblock %}
 
 {% block page_content %}
-   <div class="jumbotron">
+   <div class="slogan">
       <div class="container">
          <h1 class="text-center">Boost Your Business With US</h1>
 
@@ -15,45 +15,37 @@
       </div>
    </div>
 
-   <div class="container">
+   <div class="container works">
       <h1 class="title">Our Works</h1>
 
       <div class="row clearfix">
-         <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-               <img src="http://placehold.it/350x250" alt="">
+         <img src="{{ static('image/aod_gray.png') }}" class="aod" alt=""/>
+         <img src="{{ static('image/lemaker_gray.png') }}" class="lemaker" alt=""/>
+         <img src="{{ static('image/optico_gray.png') }}" class="optico" alt=""/>
+      </div>
+   </div>
 
-               <div class="caption">
-                  <h3>Optico</h3>
+   <div class="work aod">
+      <div class="container clearfix">
+         <h1 class="title">AOD</h1>
 
-                  <p>We help Optico Communication to build their websites.</p>
-               </div>
-            </div>
-         </div>
+         <img class="center-block" src="http://placehold.it/800x500" alt="">
+      </div>
+   </div>
 
-         <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-               <img src="http://placehold.it/350x250" alt="">
+   <div class="work aod">
+      <div class="container clearfix">
+         <h1 class="title">LeMaker</h1>
 
-               <div class="caption">
-                  <h3>LeMaker</h3>
+         <img class="center-block" src="http://placehold.it/800x500" alt="">
+      </div>
+   </div>
 
-                  <p>We help LeMaker 3D Printing Company to build their websites.</p>
-               </div>
-            </div>
-         </div>
+   <div class="work aod">
+      <div class="container clearfix">
+         <h1 class="title">Optico</h1>
 
-         <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-               <img src="http://placehold.it/350x250" alt="">
-
-               <div class="caption">
-                  <h3>AOD</h3>
-
-                  <p>We help AOD 3D Printing Company to build their websites.</p>
-               </div>
-            </div>
-         </div>
+         <img class="center-block" src="http://placehold.it/800x500" alt="">
       </div>
    </div>
 
@@ -87,9 +79,6 @@
                <p>Jian Zhao</p>
             </div>
          </div>
-
       </div>
-
-
    </div>
 {% endblock %}

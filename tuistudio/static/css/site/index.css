@@ -1,6 +1,49 @@
+#page-index .navbar {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+#page-index .slogan {
+  padding: 90px 0;
+  background: url('/static/image/triangles.png') repeat;
+  border-bottom: 1px solid #EEEEEE;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+#page-index .slogan h1 {
+  font-size: 65px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+#page-index .slogan p {
+  font-size: 20px;
+  color: #666;
+}
 #page-index .title {
+  font-size: 30px;
+  font-weight: normal;
   text-align: center;
+  margin: 50px 0;
 }
 #page-index .member {
   text-align: center;
+}
+#page-index .works {
+  text-align: center;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #dddddd;
+}
+#page-index .works .title {
+  margin-bottom: 20px;
+}
+#page-index .works img {
+  display: inline-block;
+  height: 47px;
+}
+#page-index .works img.aod {
+  height: 42px;
+  margin-right: 100px;
+}
+#page-index .works img.lemaker {
+  margin-right: 80px;
+}
+#page-index .works img.optico {
+  height: 70px;
 }

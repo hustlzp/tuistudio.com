@@ -1,6 +1,12 @@
 .text-error {
   color: red;
 }
+.text-main {
+  color: #36a9e5;
+}
+.text-black {
+  color: #333333;
+}
 .text-light {
   color: gray;
 }
