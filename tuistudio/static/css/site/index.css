@@ -1,19 +1,18 @@
 #page-index .navbar {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
-#page-index .slogan {
-  padding: 90px 0;
+#page-index .market {
+  padding: 120px 0 120px 0;
   background: url('/static/image/triangles.png') repeat;
   border-bottom: 1px solid #EEEEEE;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
-#page-index .slogan h1 {
+#page-index .market h1 {
   font-size: 65px;
   font-weight: normal;
   margin-bottom: 20px;
 }
-#page-index .slogan p {
-  font-size: 20px;
+#page-index .market p {
+  font-size: 22px;
   color: #666;
 }
 #page-index .title {
