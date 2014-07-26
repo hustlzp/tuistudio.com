@@ -101,14 +101,22 @@ a:hover {
   margin-right: 20px;
 }
 .footer {
-  padding: 30px 0;
+  padding: 20px 0;
   margin-top: 80px;
   border-top: 1px solid #dddddd;
+  font-size: 13px;
 }
 .footer .cp {
+  float: right;
+}
+.footer .links {
   float: left;
 }
-.footer .slogan {
-  float: right;
-  font-size: 18px;
+.footer .links li {
+  padding-right: 10px;
+}
+.footer .usa {
+  display: block;
+  height: 18px;
+  margin-left: 15px;
 }
