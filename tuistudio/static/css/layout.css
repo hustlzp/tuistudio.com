@@ -111,11 +111,15 @@ a:hover {
 .footer .cp {
   float: right;
 }
-.footer .links {
+.footer .links-left {
   float: left;
 }
-.footer .links li {
+.footer .links-left li {
   padding-right: 10px;
+}
+.footer .links-right {
+  float: right;
+  margin-left: 10px;
 }
 .footer .usa {
   display: block;
