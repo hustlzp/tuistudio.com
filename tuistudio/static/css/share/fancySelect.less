@@ -28,6 +28,7 @@ div.fancy-select {
       border-top-color: #4B5468;
       top: 18px;
       right: 10px;
+      opacity: 0.5;
     }
 
     &:hover,
@@ -35,7 +36,7 @@ div.fancy-select {
       border-color: @main-color;
 
       &:after {
-        opacity: 0.5;
+        opacity: 1;
       }
     }
   }
@@ -52,7 +53,7 @@ div.fancy-select {
     background-color: #EEEEEE;
     visibility: hidden;
     opacity: 0;
-    z-index: 50;
+    z-index: 10000;
     overflow: auto;
     border-radius: 4px;
 
@@ -78,7 +79,7 @@ div.fancy-select {
       white-space: nowrap;
 
       &.selected {
-
+        background-color: #dddddd;
       }
 
       &.hover {

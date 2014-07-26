@@ -26,3 +26,28 @@ body {
 .btn.btn-primary {
   background-color: #36a9e5;
 }
+a {
+  transition: all 100ms ease-out;
+  -webkit-transition: all 100ms ease-out;
+  -moz-transition: all 100ms ease-out;
+  -ms-transition: all 100ms ease-out;
+  -o-transition: all 100ms ease-out;
+}
+.form-control {
+  height: auto;
+  border-radius: 4px;
+  padding: 10px 24px 10px 10px;
+  background: white;
+  border: 1px solid #cccccc;
+  box-shadow: none;
+  transition: all 200ms ease-out;
+  -webkit-transition: all 200ms ease-out;
+  -moz-transition: all 200ms ease-out;
+  -ms-transition: all 200ms ease-out;
+  -o-transition: all 200ms ease-out;
+}
+.form-control:hover,
+.form-control:focus {
+  border: 1px solid #36a9e5;
+  box-shadow: none;
+}

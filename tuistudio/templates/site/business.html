@@ -19,27 +19,27 @@
 
             <form role="form" method="post">
                <div class="form-group">
-                  <label for="bugget">Bugget</label>
-                  <select class="form-control" name="bugget" id="bugget">
-                     <option value="1">Less than $1000</option>
-                     <option>$1000 ~ $2000</option>
-                     <option>$2000 ~ 5000</option>
-                     <option>More than $5000</option>
-                  </select>
+                  <label>Bugget + Period</label>
+
+                  <div class="clearfix">
+                     <select class="form-control" name="bugget" id="bugget">
+                        <option>Less than $1000</option>
+                        <option>$1000 ~ $2000</option>
+                        <option>$2000 ~ 5000</option>
+                        <option>More than $5000</option>
+                     </select>
+
+                     <select class="form-control" name="period" id="period">
+                        <option>1 month</option>
+                        <option>1 ~ 3 month</option>
+                        <option>more than 3 month</option>
+                     </select>
+                  </div>
                </div>
 
                <div class="form-group">
-                  <label for="exampleInputPassword1">Period</label>
-                  <select class="form-control" name="period" id="period">
-                     <option value="1">1 month</option>
-                     <option>1 ~ 3 month</option>
-                     <option>more than 3 month</option>
-                  </select>
-               </div>
-
-               <div class="form-group">
-                  <label for="desc">Description about the project</label>
-                  <textarea rows=10 class="form-control" id="desc" name="desc"></textarea>
+                  <label for="desc">Description about your project</label>
+                  <textarea rows=8 class="form-control" id="desc" name="desc"></textarea>
                </div>
 
                <div class="form-group">
@@ -53,7 +53,7 @@
                </div>
 
                <button type="submit" class="btn btn-primary btn-lg btn-block">
-                  <span class="fa fa-paper-plane"></span> Submit
+                  <span class="fa fa-paper-plane"></span>&nbsp;&nbsp;Submit
                </button>
             </form>
          </div>

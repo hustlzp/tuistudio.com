@@ -12,3 +12,23 @@ body {
     background-color: @main-color;
   }
 }
+
+a {
+  .transition(100ms);
+}
+
+.form-control {
+  height: auto;
+  border-radius: 4px;
+  padding: 10px 24px 10px 10px;
+  background: white;
+  border: 1px solid #cccccc;
+  box-shadow: none;
+  .transition(200ms);
+
+  &:hover,
+  &:focus {
+    border: 1px solid @main-color;
+    box-shadow: none;
+  }
+}

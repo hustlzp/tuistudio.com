@@ -33,3 +33,11 @@
   -o-border-radius: @radius;
   border-radius: @radius;
 }
+
+.transition( @time:150ms ) {
+  transition: all @time ease-out;
+  -webkit-transition: all @time ease-out;
+  -moz-transition: all @time ease-out;
+  -ms-transition: all @time ease-out;
+  -o-transition: all @time ease-out;
+}
