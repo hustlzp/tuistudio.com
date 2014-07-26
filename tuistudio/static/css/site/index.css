@@ -1,3 +1,21 @@
+@font-face {
+  font-family: 'Oxygen';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Oxygen Light'), local('Oxygen-Light'), url(/static/fonts/AwBqWF2kjhlybWamaKMPcbO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+@font-face {
+  font-family: 'Oxygen';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oxygen'), local('Oxygen-Regular'), url(/static/fonts/eAWT4YudG0otf3rlsJD6zOvvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+}
+@font-face {
+  font-family: 'Oxygen';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Oxygen Bold'), local('Oxygen-Bold'), url(/static/fonts/yVHpdQrmTj9Kax1tmFSx2rO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
 #page-index .navbar {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
@@ -21,9 +39,6 @@
   text-align: center;
   margin: 50px 0;
 }
-#page-index .member {
-  text-align: center;
-}
 #page-index .works {
   text-align: center;
   padding-bottom: 30px;
@@ -42,4 +57,24 @@
 }
 #page-index .works img.optico {
   height: 70px;
+}
+#page-index .services {
+  margin-top: 60px;
+  padding-bottom: 200px;
+  background-color: #36a9e5;
+  color: white;
+}
+#page-index .tech .tech-item {
+  height: 80px;
+  margin-left: 20px;
+}
+#page-index .tech .tech-item:first-child {
+  margin-left: 0;
+}
+#page-index .contact ul {
+  padding: 20px 0 0 50px;
+  list-style-type: square;
+}
+#page-index .contact ul li {
+  margin-bottom: 5px;
 }

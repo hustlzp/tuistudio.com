@@ -45,7 +45,9 @@
          <ul class="nav navbar-nav navbar-right">
             <li id="nav-works"><a href="{{ url_for('site.index') }}#works">Works</a></li>
             <li id="nav-services"><a href="{{ url_for('site.index') }}#services">Services</a></li>
+            <li id="nav-tech"><a href="{{ url_for('site.index') }}#tech">Tech</a></li>
             <li id="nav-contact"><a href="{{ url_for('site.index') }}#contact">Contact</a></li>
+
             {% if g.user %}
                <li id="nav-settings">
                   <a href="#">{{ g.user.name }}</a>

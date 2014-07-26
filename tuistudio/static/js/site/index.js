@@ -6,6 +6,8 @@ $(function () {
         scrollTo('.works', 200);
     } else if (hash === '#services') {
         scrollTo('.services', 300);
+    } else if (hash === '#tech') {
+        scrollTo('.tech', 300);
     } else if (hash === '#contact') {
         scrollTo('.contact', 300);
     }
@@ -18,6 +20,11 @@ $(function () {
     $('#nav-services').click(function () {
         scrollTo('.services', 300);
     });
+
+    $('#nav-tech').click(function () {
+        scrollTo('.tech', 300);
+    });
+
 
     $('#nav-contact').click(function () {
         scrollTo('.contact', 300);
