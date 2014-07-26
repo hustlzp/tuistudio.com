@@ -60,15 +60,29 @@
 }
 #page-index .services {
   margin-top: 60px;
-  padding-bottom: 200px;
+  padding-bottom: 60px;
   background-color: #36a9e5;
   color: white;
 }
-#page-index .tech .tech-item {
-  height: 80px;
-  margin-left: 20px;
+#page-index .services .service {
+  text-align: center;
 }
-#page-index .tech .tech-item:first-child {
+#page-index .services .service span {
+  font-size: 80px;
+  display: block;
+  margin-bottom: 20px;
+}
+#page-index .tech .tech-wap {
+  width: 80%;
+  padding-left: 20px;
+}
+#page-index .tech .tech-wap .tech-item {
+  height: 80px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  vertical-align: top;
+}
+#page-index .tech .tech-wap .tech-item:first-child {
   margin-left: 0;
 }
 #page-index .contact ul {

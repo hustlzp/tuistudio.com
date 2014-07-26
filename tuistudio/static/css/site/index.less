@@ -58,18 +58,35 @@
 
   .services {
     margin-top: 60px;
-    padding-bottom: 200px;
+    padding-bottom: 60px;
     background-color: @main-color;
     color: white;
+
+    .service {
+      text-align: center;
+
+      span {
+        font-size: 80px;
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
   }
 
   .tech {
-    .tech-item {
-      height: 80px;
-      margin-left: 20px;
+    .tech-wap {
+      width: 80%;
+      padding-left: 20px;
 
-      &:first-child {
-        margin-left: 0;
+      .tech-item {
+        height: 80px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        vertical-align: top;
+
+        &:first-child {
+          margin-left: 0;
+        }
       }
     }
   }

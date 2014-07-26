@@ -18,15 +18,15 @@
       </div>
    </div>
 
-   <div class="container works">
-      <h1 class="title">Our Works</h1>
-
-      <div class="row clearfix">
-         <img src="{{ static('image/aod_gray.png') }}" class="aod" alt="AOD"/>
-         <img src="{{ static('image/lemaker_gray.png') }}" class="lemaker" alt="LeMaker"/>
-         <img src="{{ static('image/optico_gray.png') }}" class="optico" alt="Optico"/>
-      </div>
-   </div>
+   {#   <div class="container works">#}
+   {#      <h1 class="title">Our Works</h1>#}
+   {##}
+   {#      <div class="row clearfix">#}
+   {#         <img src="{{ static('image/aod_gray.png') }}" class="aod" alt="AOD"/>#}
+   {#         <img src="{{ static('image/lemaker_gray.png') }}" class="lemaker" alt="LeMaker"/>#}
+   {#         <img src="{{ static('image/optico_gray.png') }}" class="optico" alt="Optico"/>#}
+   {#      </div>#}
+   {#   </div>#}
 
    <div class="work">
       <div class="container clearfix">
@@ -47,6 +47,27 @@
    <div class="services">
       <div class="container">
          <h1 class="title">Services</h1>
+
+
+         <div class="row clearfix">
+            <div class="col-sm-4 service">
+               <span class="fa fa-android"></span>
+
+               <p>Web & Mobile</p>
+            </div>
+
+            <div class="col-sm-4 service">
+               <span class="fa fa-map-marker"></span>
+
+               <p>GeoEngine & GeoDatastore</p>
+            </div>
+
+            <div class="col-sm-4 service">
+               <span class="fa fa-database"></span>
+
+               <p>System & Server</p>
+            </div>
+         </div>
       </div>
    </div>
 
@@ -70,7 +91,23 @@
       <div class="container">
          <h1 class="title">Technologies we use</h1>
 
-         <div class="text-center">
+         <div class="center-block tech-wap">
+            <img class="tech-item" src="{{ static('image/python.png') }}" alt=""/>
+            <img class="tech-item" src="{{ static('image/python.png') }}" alt=""/>
+            <img class="tech-item" src="{{ static('image/python.png') }}" alt=""/>
+            <img class="tech-item" src="{{ static('image/python.png') }}" alt=""/>
+            <img class="tech-item" src="{{ static('image/python.png') }}" alt=""/>
+            <img class="tech-item" src="{{ static('image/python.png') }}" alt=""/>
+            <img class="tech-item" src="{{ static('image/python.png') }}" alt=""/>
+            <img class="tech-item" src="{{ static('image/python.png') }}" alt=""/>
+            <img class="tech-item" src="{{ static('image/python.png') }}" alt=""/>
+            <img class="tech-item" src="{{ static('image/python.png') }}" alt=""/>
+            <img class="tech-item" src="{{ static('image/python.png') }}" alt=""/>
+            <img class="tech-item" src="{{ static('image/python.png') }}" alt=""/>
+            <img class="tech-item" src="{{ static('image/python.png') }}" alt=""/>
+            <img class="tech-item" src="{{ static('image/python.png') }}" alt=""/>
+            <img class="tech-item" src="{{ static('image/python.png') }}" alt=""/>
+            <img class="tech-item" src="{{ static('image/python.png') }}" alt=""/>
             <img class="tech-item" src="{{ static('image/python.png') }}" alt=""/>
             <img class="tech-item" src="{{ static('image/python.png') }}" alt=""/>
             <img class="tech-item" src="{{ static('image/python.png') }}" alt=""/>
@@ -86,7 +123,7 @@
 
          <div class="row">
             <div class="col-sm-7">
-               <img class="img-responsive" src="http://placehold.it/800x500" alt=""/>
+               <img class="img-responsive" src="{{ static('image/usa_map.jpg') }}" alt=""/>
             </div>
 
             <div class="col-sm-5">
