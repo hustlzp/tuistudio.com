@@ -1,3 +1,24 @@
+@font-face {
+  font-family: 'Oxygen';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Oxygen Light'), local('Oxygen-Light'), url(/static/fonts/AwBqWF2kjhlybWamaKMPcbO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+@font-face {
+  font-family: 'Oxygen';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oxygen'), local('Oxygen-Regular'), url(/static/fonts/eAWT4YudG0otf3rlsJD6zOvvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+}
+@font-face {
+  font-family: 'Oxygen';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Oxygen Bold'), local('Oxygen-Bold'), url(/static/fonts/yVHpdQrmTj9Kax1tmFSx2rO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+body {
+  font-family: 'Oxygen', sans-serif;
+}
 .btn {
   border-radius: 2px;
   border: 0;
