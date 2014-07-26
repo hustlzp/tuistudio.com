@@ -21,7 +21,8 @@ def create_app():
     CsrfProtect(app)
 
     if app.debug:
-        DebugToolbarExtension(app)
+        pass
+        # DebugToolbarExtension(app)
     else:
         from .utils.sentry import sentry
 
@@ -79,15 +80,25 @@ def register_jinja(app):
         """生成script标签"""
         return Markup("<script type='text/javascript' src='%s'></script>" % static(path))
 
+    # def bower_js(path):
+    # """生成来自bower的script标签"""
+    #     return Markup("<script type='text/javascript' src='%s'></script>" % bower(path))
+
     def link(path):
         """生成link标签"""
         return Markup("<link rel='stylesheet' href='%s'></script>" % static(path))
+
+    # def bower_css(path):
+    #     """生成link标签"""
+    #     return Markup("<link rel='stylesheet' href='%s'></script>" % bower(path))
 
     app.jinja_env.globals['url_for_other_page'] = url_for_other_page
     app.jinja_env.globals['static'] = static
     app.jinja_env.globals['bower'] = bower
     app.jinja_env.globals['script'] = script
+    # app.jinja_env.globals['bower_js'] = bower_js
     app.jinja_env.globals['link'] = link
+    # app.jinja_env.globals['css'] = bower_css
 
 
 def register_db(app):
