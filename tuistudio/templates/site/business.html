@@ -18,6 +18,8 @@
             <h1 class="text-center">Start Your Project</h1>
 
             <form role="form" method="post">
+               {{ form.csrf_token() }}
+
                <div class="form-group">
                   <label>Bugget + Period</label>
 

@@ -24,4 +24,4 @@ def business():
     if form.validate_on_submit():
         flash('Got it! We will reply to you soon.')
         return redirect(url_for('.index'))
-    return render_template('site/business.html')
+    return render_template('site/business.html', form=form)
