@@ -24,7 +24,7 @@ $(function () {
     });
 
     $(window).scroll(function () {
-        if ($(window).scrollTop() > 200) {
+        if ($(window).scrollTop() > 393) {
             $('.navbar').addClass('condensed');
         } else {
             $('.navbar').removeClass('condensed');
