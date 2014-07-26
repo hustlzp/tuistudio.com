@@ -15,8 +15,9 @@
    {{ link('css/layout.css') }}
    {% block page_css %}{% endblock %}
    {{ script('bower_components/respond/dest/respond.min.js') }}
-   {{ script('bower_components/jquery/dist/jquery.js') }}
+   {{ script('bower_components/jquery/dist/jquery.min.js') }}
    {{ script('bower_components/bootstrap/dist/js/bootstrap.min.js') }}
+   {{ script('bower_components/jquery.scrollTo/jquery.scrollTo.min.js') }}
 </head>
 
 <body id="{% block page_id %}{% endblock %}">
@@ -42,8 +43,8 @@
          </a>
 
          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Works</a></li>
-            <li><a href="#">Services</a></li>
+            <li id="nav-works"><a href="">Works</a></li>
+            <li id="nav-services"><a href="">Services</a></li>
             {% if g.user %}
                <li id="nav-settings">
                   <a href="#">{{ g.user.name }}</a>
