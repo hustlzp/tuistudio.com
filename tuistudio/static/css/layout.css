@@ -21,6 +21,9 @@
     width: 980px;
   }
 }
+body {
+  margin-top: 80px;
+}
 a {
   color: #333333;
 }
@@ -55,27 +58,46 @@ a:hover {
 }
 .navbar {
   margin-bottom: 0;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.85);
   border-bottom: 1px solid #dddddd;
 }
-.navbar .navbar-brand {
+.navbar.condensed .navbar-header {
+  padding-top: 0;
+}
+.navbar.condensed .navbar-collapse {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.navbar .navbar-header {
+  padding-top: 15px;
+  transition: all 200ms ease-out;
+  -webkit-transition: all 200ms ease-out;
+  -moz-transition: all 200ms ease-out;
+  -ms-transition: all 200ms ease-out;
+  -o-transition: all 200ms ease-out;
+}
+.navbar .navbar-header .navbar-brand {
   display: inline-block;
-  padding-top: 30px;
   padding-bottom: 20px;
   font-size: 22px;
 }
-.navbar .navbar-nav > li > a {
-  padding: 30px 20px;
+.navbar .navbar-collapse {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  transition: all 200ms ease-out;
+  -webkit-transition: all 200ms ease-out;
+  -moz-transition: all 200ms ease-out;
+  -ms-transition: all 200ms ease-out;
+  -o-transition: all 200ms ease-out;
+}
+.navbar .navbar-collapse .navbar-nav > li > a {
+  padding: 15px 20px;
   font-size: 16px;
 }
-.navbar .navbar-nav > li > a:hover {
+.navbar .navbar-collapse .navbar-nav > li > a:hover {
   background-color: transparent;
 }
-.navbar .navbar-btn {
-  margin-top: 23px;
-  padding: 7px 12px;
-}
-.navbar .navbar-nav.navbar-right:last-child {
+.navbar .navbar-collapse .navbar-nav.navbar-right:last-child {
   margin-right: 20px;
 }
 .footer {
