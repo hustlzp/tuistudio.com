@@ -10,6 +10,7 @@ def deploy():
         run('bower update --allow-root')
         with prefix('source venv/bin/activate'):
             run('pip install -r requirements.txt')
+            run('python manage.py db upgrade')
         run('supervisorctl restart tuistudio')
 
 
