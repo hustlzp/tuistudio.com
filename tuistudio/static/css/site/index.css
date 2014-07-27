@@ -58,9 +58,20 @@
 #page-index .works img.optico {
   height: 70px;
 }
-#page-index .work img {
-  width: 600px;
+#page-index .work .image-wap {
+  height: 510px;
+  width: 739px;
+  background: url(/static/image/iMac.png) no-repeat center center;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+#page-index .work .image-wap img {
+  width: 669px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 35px;
+  left: 35px;
 }
 #page-index .services {
   margin-top: 75px;
