@@ -19,14 +19,47 @@
 #page-business h1 {
   margin: 40px 0 40px 0;
 }
+#page-business .form-wap {
+  width: 52%;
+}
 #page-business .form-group {
   margin-bottom: 20px;
 }
 #page-business textarea {
   resize: vertical;
 }
+#page-business .project-type-label {
+  margin-top: 6px;
+  margin-right: 11px;
+  float: left;
+}
+#page-business .project-type-selector {
+  float: left;
+}
+#page-business .project-type-selector .btn-primary {
+  background-color: white;
+  border: 1px solid #dddddd;
+  color: #999999;
+  transition: all 150ms ease-out;
+  -webkit-transition: all 150ms ease-out;
+  -moz-transition: all 150ms ease-out;
+  -ms-transition: all 150ms ease-out;
+  -o-transition: all 150ms ease-out;
+}
+#page-business .project-type-selector .btn-primary:hover {
+  border: 1px solid #36a9e5;
+}
+#page-business .project-type-selector .btn-primary:focus,
+#page-business .project-type-selector .btn-primary:active {
+  box-shadow: none;
+}
+#page-business .project-type-selector .btn-primary.active {
+  border: 1px solid #36a9e5;
+  color: #36a9e5;
+  box-shadow: none;
+}
 #page-business .fancy-select {
-  width: 223px;
+  width: 232px;
   float: left;
 }
 #page-business .fancy-select * {

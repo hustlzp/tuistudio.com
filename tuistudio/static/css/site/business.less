@@ -5,6 +5,10 @@
     margin: 40px 0 40px 0;
   }
 
+  .form-wap {
+    width: 52%;
+  }
+
   .form-group {
     margin-bottom: 20px;
   }
@@ -13,8 +17,40 @@
     resize: vertical;
   }
 
+  .project-type-label {
+    margin-top: 6px;
+    margin-right: 11px;
+    float: left;
+  }
+
+  .project-type-selector {
+    float: left;
+
+    .btn-primary {
+      background-color: white;
+      border: 1px solid #dddddd;
+      color: #999999;
+      .transition();
+
+      &:hover {
+        border: 1px solid @main-color;
+      }
+
+      &:focus,
+      &:active {
+        box-shadow: none;
+      }
+
+      &.active {
+        border: 1px solid @main-color;
+        color: @main-color;
+        box-shadow: none;
+      }
+    }
+  }
+
   .fancy-select {
-    width: 223px;
+    width: 232px;
     float: left;
 
     * {

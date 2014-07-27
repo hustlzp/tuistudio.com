@@ -14,11 +14,27 @@
 {% block page_content %}
    <div class="container">
       <div class="row">
-         <div class="col-sm-6 col-sm-offset-3">
+         <div class="col-sm-6 col-sm-offset-3 form-wap">
             <h1 class="text-center">Start Your Project</h1>
 
             <form role="form" method="post">
                {{ form.csrf_token() }}
+
+               <div class="form-group clearfix">
+                  <label class="project-type-label">Project Type</label>
+
+                  <div class="btn-group project-type-selector" data-toggle="buttons">
+                     <label class="btn btn-primary active">
+                        <input type="checkbox" name="type" value="WEB" checked> Web
+                     </label>
+                     <label class="btn btn-primary">
+                        <input type="checkbox" name="type" value="GG"> GeoEngine & GeoDatastore
+                     </label>
+                     <label class="btn btn-primary">
+                        <input type="checkbox" name="type" value="SS"> System & Server
+                     </label>
+                  </div>
+               </div>
 
                <div class="form-group">
                   {#                  <label>Bugget + Period</label>#}
