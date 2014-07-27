@@ -21,10 +21,11 @@
                {{ form.csrf_token() }}
 
                <div class="form-group">
-                  <label>Bugget + Period</label>
+                  {#                  <label>Bugget + Period</label>#}
 
                   <div class="clearfix">
                      <select class="form-control" name="bugget" id="bugget">
+                        <option>Select bugget</option>
                         <option>Less than $1000</option>
                         <option>$1000 ~ $2000</option>
                         <option>$2000 ~ $5000</option>
@@ -32,6 +33,7 @@
                      </select>
 
                      <select class="form-control" name="period" id="period">
+                        <option>Select project period</option>
                         <option>1 month</option>
                         <option>1 ~ 3 month</option>
                         <option>more than 3 months</option>
@@ -40,18 +42,21 @@
                </div>
 
                <div class="form-group">
-                  <label for="desc">Description about your project</label>
-                  <textarea rows=8 class="form-control" id="desc" name="desc"></textarea>
+                  {#                  <label for="desc">Description about your project</label>#}
+                  <textarea rows=8 class="form-control" id="desc" name="desc"
+                            placeholder="Description about your project"></textarea>
                </div>
 
                <div class="form-group">
-                  <label for="name">Your name</label>
-                  <input type="text" class="form-control" name="name" id="name">
+                  {#                  <label for="name">Your name</label>#}
+                  <input type="text" class="form-control" name="name" id="name"
+                         placeholder="Your name">
                </div>
 
                <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="text" class="form-control" name="email" id="email">
+                  {#                  <label for="email">Email</label>#}
+                  <input type="text" class="form-control" name="email" id="email"
+                         placeholder="Email">
                </div>
 
                <button type="submit" class="btn btn-primary btn-lg btn-block">
