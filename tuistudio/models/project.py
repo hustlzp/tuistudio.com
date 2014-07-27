@@ -8,6 +8,7 @@ class Project(db.Model):
     type = db.Column(db.String(50))
     bugget = db.Column(db.String(50))
     period = db.Column(db.String(50))
+    hire_type = db.Column(db.String(50))
     desc = db.Column(db.Text)
     name = db.Column(db.String(100))
     email = db.Column(db.String(100))
