@@ -14,34 +14,33 @@
 {% block page_content %}
    <div class="container">
       <div class="row">
-         <div class="col-sm-6 col-sm-offset-3 form-wap">
+         <div class="form-wap center-block">
             <h1 class="text-center">Start Your Project</h1>
 
             <form role="form" method="post">
                {{ form.csrf_token() }}
 
                <div class="form-group clearfix">
-                  <label class="project-type-label">Project Type</label>
-
                   <div class="btn-group project-type-selector" data-toggle="buttons">
                      <label class="btn btn-primary active">
-                        <input type="checkbox" name="type" value="WEB" checked> Web
+                        <input type="checkbox" name="type" value="WM" checked>
+                        <span class="fa fa-check"></span>&nbsp;&nbsp;Web & Mobile
                      </label>
                      <label class="btn btn-primary">
-                        <input type="checkbox" name="type" value="GG"> GeoEngine & GeoDatastore
+                        <input type="checkbox" name="type" value="GG">
+                        <span class="fa fa-check"></span>&nbsp;&nbsp;GeoEngine & GeoDatastore
                      </label>
                      <label class="btn btn-primary">
-                        <input type="checkbox" name="type" value="SS"> System & Server
+                        <input type="checkbox" name="type" value="SS">
+                        <span class="fa fa-check"></span>&nbsp;&nbsp;System & Server
                      </label>
                   </div>
                </div>
 
                <div class="form-group">
-                  {#                  <label>Bugget + Period</label>#}
-
                   <div class="clearfix">
                      <select class="form-control" name="bugget" id="bugget">
-                        <option>Select bugget</option>
+                        <option>Project Bugget</option>
                         <option>Less than $1000</option>
                         <option>$1000 ~ $2000</option>
                         <option>$2000 ~ $5000</option>
@@ -49,28 +48,32 @@
                      </select>
 
                      <select class="form-control" name="period" id="period">
-                        <option>Select project period</option>
+                        <option>Project Period</option>
                         <option>1 month</option>
                         <option>1 ~ 3 month</option>
                         <option>more than 3 months</option>
+                     </select>
+
+                     <select class="form-control" name="hire_type" id="hire-type">
+                        <option>Hire Type</option>
+                        <option>Hire Type 1</option>
+                        <option>Hire Type 2</option>
+                        <option>Hire Type 3</option>
                      </select>
                   </div>
                </div>
 
                <div class="form-group">
-                  {#                  <label for="desc">Description about your project</label>#}
                   <textarea rows=8 class="form-control" id="desc" name="desc"
                             placeholder="Description about your project"></textarea>
                </div>
 
                <div class="form-group">
-                  {#                  <label for="name">Your name</label>#}
                   <input type="text" class="form-control" name="name" id="name"
                          placeholder="Your name">
                </div>
 
                <div class="form-group">
-                  {#                  <label for="email">Email</label>#}
                   <input type="text" class="form-control" name="email" id="email"
                          placeholder="Email">
                </div>
