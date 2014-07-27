@@ -41,13 +41,19 @@
 }
 #page-business .project-type-selector .btn-primary.active {
   border: 1px solid #36a9e5;
-  color: #1b90cd;
+  color: #555;
   box-shadow: none;
+}
+#page-business .project-type-selector .btn-primary.active span {
+  color: #1b90cd;
 }
 #page-business .fancy-select {
   width: 160px;
   margin-left: 20px;
   float: left;
+}
+#page-business .fancy-select .trigger {
+  color: #555555;
 }
 #page-business .fancy-select * {
   transition: all 200ms ease-out;

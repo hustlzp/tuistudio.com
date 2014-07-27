@@ -34,7 +34,11 @@
 
       &.active {
         border: 1px solid @main-color;
-        color: darken(@main-color, 10%);
+        color: #555;
+        span {
+          color: darken(@main-color, 10%);
+        }
+
         box-shadow: none;
       }
     }
@@ -44,6 +48,10 @@
     width: 160px;
     margin-left: 20px;
     float: left;
+
+    .trigger {
+      color: #555555;
+    }
 
     * {
       .transition(200ms);
