@@ -58,6 +58,10 @@
 #page-index .works img.optico {
   height: 70px;
 }
+#page-index .work img {
+  width: 600px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
 #page-index .services {
   margin-top: 75px;
   padding-bottom: 60px;
