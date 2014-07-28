@@ -16,11 +16,6 @@
   font-weight: 700;
   src: local('Oxygen Bold'), local('Oxygen-Bold'), url(/static/fonts/yVHpdQrmTj9Kax1tmFSx2rO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
 }
-@media (min-width: 1200px) {
-  .container {
-    width: 980px;
-  }
-}
 body {
   margin-top: 80px;
 }
