@@ -3,7 +3,7 @@ $(function () {
 
     // 根据hash进行滑动
     if (hash == '#works') {
-        scrollTo('.work1', 200);
+        scrollTo('.works', 200);
     } else if (hash === '#services') {
         scrollTo('.services', 300);
     } else if (hash === '#tech') {
@@ -14,7 +14,7 @@ $(function () {
 
     // 点击导航栏滑动
     $('#nav-works').click(function () {
-        scrollTo('.work1', 200);
+        scrollTo('.works', 200);
     });
 
     $('#nav-services').click(function () {
