@@ -106,10 +106,10 @@ a:hover {
   color: white;
 }
 .footer .footer-content .links {
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 }
 .footer .footer-content .links li {
-  padding-right: 10px;
+  padding-right: 15px;
 }
 .footer .footer-content .links li a {
   color: white;
@@ -123,13 +123,19 @@ a:hover {
   height: 14px;
 }
 .footer .footer-content .cp {
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 }
 .footer .footer-content .icons {
   font-size: 18px;
 }
+.footer .footer-content .icons li {
+  padding-right: 10px;
+}
 .footer .footer-content .icons li a {
   color: white;
+}
+.footer .footer-content .icons li a:hover {
+  color: #36a9e5;
 }
 .footer .footer-logo {
   font-size: 20px;
