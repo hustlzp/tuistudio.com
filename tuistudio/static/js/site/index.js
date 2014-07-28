@@ -10,6 +10,8 @@ $(function () {
         scrollTo('.tech', 300);
     } else if (hash === '#contact') {
         scrollTo('.contact', 300);
+    } else if (hash === '#process') {
+        scrollTo('.process', 300);
     }
 
     // 点击导航栏滑动
@@ -25,6 +27,9 @@ $(function () {
         scrollTo('.tech', 300);
     });
 
+    $('#nav-process').click(function () {
+        scrollTo('.process', 300);
+    });
 
     $('#nav-contact').click(function () {
         scrollTo('.contact', 300);
