@@ -16,9 +16,6 @@
   font-weight: 700;
   src: local('Oxygen Bold'), local('Oxygen-Bold'), url(/static/fonts/yVHpdQrmTj9Kax1tmFSx2rO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
 }
-body {
-  font-family: 'Oxygen', sans-serif;
-}
 .btn {
   border-radius: 2px;
   border: 0;
