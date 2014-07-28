@@ -45,6 +45,9 @@
   margin-bottom: 60px;
   border-bottom: 1px solid #dddddd;
 }
+#page-index .works .title {
+  margin-bottom: 20px;
+}
 #page-index .works img {
   display: inline-block;
   height: 47px;
