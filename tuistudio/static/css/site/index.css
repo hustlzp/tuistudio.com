@@ -74,10 +74,8 @@
   left: 35px;
 }
 #page-index .services {
-  margin-top: 75px;
   padding-bottom: 60px;
-  background-color: #36a9e5;
-  color: white;
+  background-color: #f8f8f8;
 }
 #page-index .services .service {
   text-align: center;
