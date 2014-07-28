@@ -97,27 +97,40 @@ a:hover {
   margin-right: 20px;
 }
 .footer {
-  padding: 20px 0;
+  background-color: #4f5161;
+  padding: 30px 0;
   line-height: 1;
   margin-top: 80px;
   border-top: 1px solid #dddddd;
   font-size: 13px;
+  color: white;
 }
-.footer .cp {
-  float: right;
+.footer .footer-content .links {
+  margin-bottom: 15px;
 }
-.footer .links-left {
-  float: left;
-}
-.footer .links-left li {
+.footer .footer-content .links li {
   padding-right: 10px;
 }
-.footer .links-right {
-  float: right;
-  margin-left: 10px;
+.footer .footer-content .links li a {
+  color: white;
 }
-.footer .usa {
+.footer .footer-content .links li a:hover {
+  color: #36a9e5;
+}
+.footer .footer-content .usa {
   display: block;
   margin-left: 12px;
   height: 14px;
+}
+.footer .footer-content .cp {
+  margin-bottom: 15px;
+}
+.footer .footer-content .icons {
+  font-size: 18px;
+}
+.footer .footer-content .icons li a {
+  color: white;
+}
+.footer .footer-logo {
+  font-size: 20px;
 }

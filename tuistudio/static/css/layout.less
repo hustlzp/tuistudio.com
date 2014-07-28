@@ -108,36 +108,60 @@ a {
 }
 
 .footer {
-  padding: 20px 0;
+  background-color: rgb(79, 81, 97);
+  padding: 30px 0;
   line-height: 1;
   margin-top: 80px;
   border-top: 1px solid #dddddd;
   font-size: 13px;
+  color: white;
 
-  .cp {
-    float: right;
-  }
+  .footer-content {
+    .links {
+      margin-bottom: 15px;
 
-  .links-left {
-    float: left;
+      li {
+        padding-right: 10px;
 
-    li {
-      padding-right: 10px;
+        a {
+          color: white;
+
+          &:hover {
+            color: @main-color;
+          }
+        }
+      }
+    }
+
+    .usa {
+      display: block;
+      margin-left: 12px;
+      height: 14px;
+    }
+
+    .cp {
+      margin-bottom: 15px;
+    }
+
+    .icons {
+      font-size: 18px;
+
+      li {
+        //        width: 28px;
+        //        height: 28px;
+        //        text-align: center;
+        //        padding-top: 5px;
+        //        border-radius: 20px;
+        //        background-color: rgb(64, 66, 83);
+
+        a {
+          color: white;
+        }
+      }
     }
   }
 
-  .links-right {
-    float: right;
-    margin-left: 10px;
-
-    li {
-
-    }
-  }
-
-  .usa {
-    display: block;
-    margin-left: 12px;
-    height: 14px;
+  .footer-logo {
+    font-size: 20px;
   }
 }
