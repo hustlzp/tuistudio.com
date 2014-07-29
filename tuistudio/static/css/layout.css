@@ -101,7 +101,6 @@ a:hover {
   padding: 35px 0;
   line-height: 1;
   margin-top: 80px;
-  border-top: 1px solid #dddddd;
   font-size: 13px;
   color: white;
 }
@@ -144,7 +143,4 @@ a:hover {
 .footer .footer-right .logo {
   font-size: 22px;
   margin-bottom: 10px;
-}
-.footer .footer-right .slogan {
-  font-style: italic;
 }
