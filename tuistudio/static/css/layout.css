@@ -98,7 +98,7 @@ a:hover {
 }
 .footer {
   background-color: #4f5161;
-  padding: 35px 0;
+  padding: 40px 0;
   line-height: 1;
   margin-top: 80px;
   font-size: 13px;
@@ -144,4 +144,7 @@ a:hover {
 .footer .footer-right .logo {
   font-size: 22px;
   margin-bottom: 10px;
+}
+.footer .footer-right .slogan {
+  font-style: italic;
 }

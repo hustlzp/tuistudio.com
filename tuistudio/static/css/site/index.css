@@ -20,7 +20,7 @@
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 #page-index .market {
-  padding: 180px 0 20px 0;
+  padding: 140px 0 20px 0;
   background: url('/static/image/triangles.png') repeat;
   border-bottom: 1px solid #EEEEEE;
 }
@@ -41,32 +41,40 @@
 #page-index .market .icons li {
   padding: 0 8px;
 }
-#page-index .title {
+#page-index h1 {
   font-size: 30px;
   font-weight: normal;
   text-align: center;
-  margin: 50px 0;
+  margin: 70px 0 50px 0;
 }
 #page-index .services {
-  padding-bottom: 60px;
+  padding-bottom: 70px;
   background-color: #f8f8f8;
 }
 #page-index .services .service {
   text-align: center;
 }
-#page-index .services .service span {
+#page-index .services .service .fa {
   font-size: 80px;
   display: block;
   margin-bottom: 20px;
 }
+#page-index .services .service .title {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+#page-index .services .service .gap {
+  border-top: 1px solid gray;
+  width: 150px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+#page-index .services .service .desc {
+  padding: 0 20px;
+}
 #page-index .works {
   text-align: center;
-  padding-bottom: 30px;
-  margin-bottom: 60px;
-  border-bottom: 1px solid #dddddd;
-}
-#page-index .works .title {
-  margin-bottom: 20px;
+  padding-bottom: 70px;
 }
 #page-index .works img {
   display: inline-block;
@@ -83,7 +91,20 @@
   height: 70px;
 }
 #page-index .work {
-  margin-bottom: 60px;
+  padding: 0px 0 70px 0;
+  background-color: greenyellow;
+}
+#page-index .work.aod {
+  background-color: #5dc4ad;
+}
+#page-index .work.lemaker {
+  background-color: #ebeced;
+}
+#page-index .work.tq {
+  background-color: #36a9e5;
+}
+#page-index .work.lft {
+  background-color: #c8a15b;
 }
 #page-index .work .image-wap {
   height: 510px;
@@ -99,6 +120,9 @@
   position: absolute;
   top: 35px;
   left: 35px;
+}
+#page-index .tech {
+  padding-top: 70px;
 }
 #page-index .tech .tech-wap {
   width: 80%;
@@ -119,9 +143,11 @@
 }
 #page-index .contact ul {
   padding: 30px 0 0 50px;
-  list-style-type: square;
   font-size: 16px;
 }
 #page-index .contact ul li {
   margin-bottom: 5px;
+}
+#page-index .contact ul li .fa {
+  margin-right: 10px;
 }
