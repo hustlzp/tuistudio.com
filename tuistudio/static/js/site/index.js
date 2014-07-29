@@ -3,36 +3,36 @@ $(function () {
 
     // 根据hash进行滑动
     if (hash == '#works') {
-        scrollTo('.works', 200);
+        scrollTo('.works');
     } else if (hash === '#services') {
-        scrollTo('.services', 300);
+        scrollTo('.services');
     } else if (hash === '#tech') {
-        scrollTo('.tech', 300);
+        scrollTo('.tech');
     } else if (hash === '#contact') {
-        scrollTo('.contact', 300);
+        scrollTo('.contact');
     } else if (hash === '#process') {
-        scrollTo('.process', 300);
+        scrollTo('.process');
     }
 
     // 点击导航栏滑动
     $('#nav-works').click(function () {
-        scrollTo('.works', 200);
+        scrollTo('.works');
     });
 
     $('#nav-services').click(function () {
-        scrollTo('.services', 300);
+        scrollTo('.services');
     });
 
     $('#nav-tech').click(function () {
-        scrollTo('.tech', 300);
+        scrollTo('.tech');
     });
 
     $('#nav-process').click(function () {
-        scrollTo('.process', 300);
+        scrollTo('.process');
     });
 
     $('#nav-contact').click(function () {
-        scrollTo('.contact', 300);
+        scrollTo('.contact');
     });
 
     // 下滑到一定距离，压缩nav
@@ -47,10 +47,9 @@ $(function () {
     /**
      * A wapper of jQuery.scrollTo
      * @param selector
-     * @param duration
      */
-    function scrollTo(selector, duration) {
-        $.scrollTo(selector, duration, {
+    function scrollTo(selector) {
+        $.scrollTo(selector, 300, {
             offset: -50
         });
     }

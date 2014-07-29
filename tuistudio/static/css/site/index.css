@@ -20,7 +20,7 @@
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 #page-index .market {
-  padding: 120px 0 120px 0;
+  padding: 180px 0 20px 0;
   background: url('/static/image/triangles.png') repeat;
   border-bottom: 1px solid #EEEEEE;
 }
@@ -31,7 +31,15 @@
 }
 #page-index .market p {
   font-size: 22px;
+  margin-bottom: 140px;
   color: #666;
+}
+#page-index .market .icons {
+  text-align: center;
+  font-size: 26px;
+}
+#page-index .market .icons li {
+  padding: 0 8px;
 }
 #page-index .title {
   font-size: 30px;
