@@ -105,39 +105,46 @@ a:hover {
   font-size: 13px;
   color: white;
 }
-.footer .footer-content .links {
+.footer .footer-left .links {
   margin-bottom: 18px;
 }
-.footer .footer-content .links li {
+.footer .footer-left .links li {
   padding-right: 15px;
 }
-.footer .footer-content .links li a {
+.footer .footer-left .links li a {
   color: white;
 }
-.footer .footer-content .links li a:hover {
+.footer .footer-left .links li a:hover {
   color: #36a9e5;
 }
-.footer .footer-content .usa {
+.footer .footer-left .usa {
   display: block;
   margin-left: 12px;
   height: 14px;
 }
-.footer .footer-content .cp {
+.footer .footer-left .cp {
   margin-bottom: 18px;
 }
-.footer .footer-content .icons {
+.footer .footer-left .icons {
   font-size: 18px;
   margin-bottom: 0;
 }
-.footer .footer-content .icons li {
+.footer .footer-left .icons li {
   padding-right: 8px;
 }
-.footer .footer-content .icons li a {
+.footer .footer-left .icons li a {
   color: white;
 }
-.footer .footer-content .icons li a:hover {
+.footer .footer-left .icons li a:hover {
   color: #36a9e5;
 }
-.footer .footer-logo {
-  font-size: 20px;
+.footer .footer-right {
+  text-align: right;
+}
+.footer .footer-right .logo {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.footer .footer-right .slogan {
+  font-style: italic;
 }
