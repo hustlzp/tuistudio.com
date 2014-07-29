@@ -43,11 +43,21 @@
          </a>
 
          <ul class="nav navbar-nav navbar-right">
-            <li id="nav-services"><a href="{{ url_for('site.index') }}#services">SERVICES</a></li>
-            <li id="nav-works"><a href="{{ url_for('site.index') }}#works">WORKS</a></li>
-            <li id="nav-tech"><a href="{{ url_for('site.index') }}#tech">TECHS</a></li>
-            <li id="nav-contact"><a href="{{ url_for('site.index') }}#contact">CONTACT</a></li>
-            <li id="nav-process"><a href="{{ url_for('site.index') }}#process">PROCESS</a></li>
+            <li data-scroll-target="services">
+               <a href="{{ url_for('site.index') }}#services">SERVICES</a>
+            </li>
+            <li data-scroll-target="works">
+               <a href="{{ url_for('site.index') }}#works">WORKS</a>
+            </li>
+            <li data-scroll-target="techs">
+               <a href="{{ url_for('site.index') }}#techs">TECHS</a>
+            </li>
+            <li data-scroll-target="process">
+               <a href="{{ url_for('site.index') }}#process">PROCESS</a>
+            </li>
+            <li data-scroll-target="contact">
+               <a href="{{ url_for('site.index') }}#contact">CONTACT</a>
+            </li>
 
             {% if g.user %}
                <li id="nav-settings">

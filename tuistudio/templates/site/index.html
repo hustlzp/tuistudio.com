@@ -81,16 +81,20 @@
       <h1 class="title">Our Works</h1>
 
       <div class="row clearfix">
-         <img src="{{ static('image/aod_gray.png') }}" class="aod" alt="AOD"/>
-         <img src="{{ static('image/lemaker_gray.png') }}" class="lemaker" alt="LeMaker"/>
-         <img src="{{ static('image/aod_gray.png') }}" class="aod" alt="AOD"/>
-         <img src="{{ static('image/lemaker_gray.png') }}" class="lemaker" alt="LeMaker"/>
+         <img src="{{ static('image/aod_gray.png') }}" class="aod-logo" data-scroll-target="aod"
+              alt="AOD"/>
+         <img src="{{ static('image/lemaker_gray.png') }}" class="lemaker-logo"
+              data-scroll-target="lemaker" alt="LeMaker"/>
+         <img src="{{ static('image/aod_gray.png') }}" class="tq-logo" data-scroll-target="tq"
+              alt="Tianqing"/>
+         <img src="{{ static('image/lemaker_gray.png') }}" class="lft-logo"
+              data-scroll-target="lft" alt="Lifengtang"/>
       </div>
    </div>
 
    <div class="work aod">
       <div class="container clearfix">
-         <h1 class="title">AOD</h1>
+         <h1>AOD</h1>
 
          <div class="image-wap">
             <img class="center-block img-responsive" src="{{ static('image/works/aod.png') }}"
@@ -133,37 +137,15 @@
       </div>
    </div>
 
-   <div class="tech">
+   <div class="techs">
       <div class="container">
          {#         <h1 class="title">Technologies we use</h1>#}
 
-         <div class="center-block tech-wap">
-            <img class="tech-item" src="{{ static('image/python.png') }}" alt=""/>
-            <img class="tech-item" src="{{ static('image/python.png') }}" alt=""/>
-            <img class="tech-item" src="{{ static('image/python.png') }}" alt=""/>
-            <img class="tech-item" src="{{ static('image/python.png') }}" alt=""/>
-            <img class="tech-item" src="{{ static('image/python.png') }}" alt=""/>
-            <img class="tech-item" src="{{ static('image/python.png') }}" alt=""/>
-            <img class="tech-item" src="{{ static('image/python.png') }}" alt=""/>
-            <img class="tech-item" src="{{ static('image/python.png') }}" alt=""/>
-            <img class="tech-item" src="{{ static('image/python.png') }}" alt=""/>
-            <img class="tech-item" src="{{ static('image/python.png') }}" alt=""/>
-            <img class="tech-item" src="{{ static('image/python.png') }}" alt=""/>
-            <img class="tech-item" src="{{ static('image/python.png') }}" alt=""/>
-            <img class="tech-item" src="{{ static('image/python.png') }}" alt=""/>
-            <img class="tech-item" src="{{ static('image/python.png') }}" alt=""/>
-            <img class="tech-item" src="{{ static('image/python.png') }}" alt=""/>
-            <img class="tech-item" src="{{ static('image/python.png') }}" alt=""/>
-            <img class="tech-item" src="{{ static('image/python.png') }}" alt=""/>
-            <img class="tech-item" src="{{ static('image/python.png') }}" alt=""/>
-            <img class="tech-item" src="{{ static('image/python.png') }}" alt=""/>
-            <img class="tech-item" src="{{ static('image/python.png') }}" alt=""/>
-            <img class="tech-item" src="{{ static('image/python.png') }}" alt=""/>
-         </div>
+         <img class="img-responsive center-block" src="{{ static('image/techs.png') }}" alt=""/>
       </div>
    </div>
 
-   <div class="contact">
+   <div class="process">
       <div class="container">
          <h1 class="title">Process</h1>
 
@@ -211,7 +193,9 @@
                   <li>
                      <span class="fa fa-fax"></span> 111-111-111
                   </li>
-                  <li>Tel: TODO</li>
+                  <li>
+                     <span class="glyphicon glyphicon-phone-alt"></span> 111-111-111
+                  </li>
                </ul>
             </div>
          </div>

@@ -1,38 +1,22 @@
 $(function () {
     var hash = window.location.hash;
 
-    // 根据hash进行滑动
-    if (hash == '#works') {
-        scrollTo('.works');
-    } else if (hash === '#services') {
-        scrollTo('.services');
-    } else if (hash === '#tech') {
-        scrollTo('.tech');
-    } else if (hash === '#contact') {
-        scrollTo('.contact');
-    } else if (hash === '#process') {
-        scrollTo('.process');
+    // 根据hash滑动
+    if (hash !== '') {
+        var targetClass = "." + hash.split('#')[1];
+        scrollTo(targetClass);
     }
 
     // 点击导航栏滑动
-    $('#nav-works').click(function () {
-        scrollTo('.works');
+    $('.navbar-nav li').click(function () {
+        var targetClass = "." + $(this).data("scroll-target");
+        scrollTo(targetClass);
     });
 
-    $('#nav-services').click(function () {
-        scrollTo('.services');
-    });
-
-    $('#nav-tech').click(function () {
-        scrollTo('.tech');
-    });
-
-    $('#nav-process').click(function () {
-        scrollTo('.process');
-    });
-
-    $('#nav-contact').click(function () {
-        scrollTo('.contact');
+    // 点击work图标滑动
+    $('.works img').click(function () {
+        var targetClass = "." + $(this).data("scroll-target");
+        scrollTo(targetClass);
     });
 
     // 下滑到一定距离，压缩nav
