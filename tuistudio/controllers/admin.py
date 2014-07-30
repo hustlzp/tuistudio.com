@@ -8,3 +8,5 @@ bp = Blueprint('admin', __name__)
 def index():
     """管理首页"""
     return render_template('admin/index.html')
+
+

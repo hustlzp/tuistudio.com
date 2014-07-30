@@ -5,7 +5,6 @@ from flask_wtf.csrf import CsrfProtect
 from flask.ext.uploads import configure_uploads
 from flask_debugtoolbar import DebugToolbarExtension
 from . import config
-from .utils.account import get_current_user
 
 # convert python's encoding to utf8
 reload(sys)
@@ -21,8 +20,7 @@ def create_app():
     CsrfProtect(app)
 
     if app.debug:
-        pass
-        # DebugToolbarExtension(app)
+        DebugToolbarExtension(app)
     else:
         from .utils.sentry import sentry
 
@@ -41,7 +39,7 @@ def create_app():
     # before every request
     @app.before_request
     def before_request():
-        g.user = get_current_user()
+        pass
 
     return app
 
@@ -80,25 +78,15 @@ def register_jinja(app):
         """生成script标签"""
         return Markup("<script type='text/javascript' src='%s'></script>" % static(path))
 
-    # def bower_js(path):
-    # """生成来自bower的script标签"""
-    #     return Markup("<script type='text/javascript' src='%s'></script>" % bower(path))
-
     def link(path):
         """生成link标签"""
         return Markup("<link rel='stylesheet' href='%s'></script>" % static(path))
-
-    # def bower_css(path):
-    #     """生成link标签"""
-    #     return Markup("<link rel='stylesheet' href='%s'></script>" % bower(path))
 
     app.jinja_env.globals['url_for_other_page'] = url_for_other_page
     app.jinja_env.globals['static'] = static
     app.jinja_env.globals['bower'] = bower
     app.jinja_env.globals['script'] = script
-    # app.jinja_env.globals['bower_js'] = bower_js
     app.jinja_env.globals['link'] = link
-    # app.jinja_env.globals['css'] = bower_css
 
 
 def register_db(app):
@@ -110,9 +98,11 @@ def register_db(app):
 
 def register_routes(app):
     """注册路由"""
-    from .controllers import site
+    from .controllers import site, account, admin
 
     app.register_blueprint(site.bp, url_prefix='')
+    app.register_blueprint(account.bp, url_prefix='/account')
+    app.register_blueprint(admin.bp, url_prefix='/admin')
 
 
 def register_error_handle(app):

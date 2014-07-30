@@ -16,6 +16,11 @@
   font-weight: 700;
   src: local('Oxygen Bold'), local('Oxygen-Bold'), url(/static/fonts/yVHpdQrmTj9Kax1tmFSx2rO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
 }
+h1.legend {
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+}
 .text-error {
   color: red;
 }

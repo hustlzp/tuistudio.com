@@ -1,25 +1,17 @@
 # coding: utf-8
 from flask import session
-from ..models import User
+from .. import config
 
 
-def signin_user(user, permenent):
+def signin_user():
     """Sign in user"""
-    session.permanent = permenent
-    session['user_id'] = user.id
+    session['user'] = config.ADMIN_USERNAME
 
 
 def signout_user():
     """Sign out user"""
-    session.pop('user_id', None)
+    session.pop('user', None)
 
 
-def get_current_user():
-    """获取当前user，同时进行session有效性的检测"""
-    if not 'user_id' in session:
-        return None
-    user = User.query.filter(User.id == session['user_id']).first()
-    if not user:
-        signout_user()
-        return None
-    return user
+def check_admin():
+    return 'user' in session and session['user'] == config.ADMIN_USERNAME
