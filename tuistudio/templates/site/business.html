@@ -11,6 +11,18 @@
    {{ script('js/site/business.js') }}
 {% endblock %}
 
+{% macro select_field(field) %}
+   <select class="form-control {% if field.errors %}field-error{% endif %}"
+           name="{{ field.name }}" id="{{ field.id }}">
+      {% for value, text in field.choices %}
+         <option value="{{ value }}"
+                 {% if field.data == value %}selected{% endif %}>
+            {{ text }}
+         </option>
+      {% endfor %}
+   </select>
+{% endmacro %}
+
 {% block page_content %}
    <div class="container">
       <div class="row">
@@ -21,62 +33,50 @@
                {{ form.csrf_token() }}
 
                <div class="form-group text-center clearfix">
-                  <div class="btn-group project-type-selector" data-toggle="buttons">
-                     <label class="btn btn-primary active">
-                        <input type="checkbox" name="type" value="WM" checked>
-                        <span class="fa fa-check"></span>&nbsp;&nbsp;Web & Mobile
-                     </label>
-                     <label class="btn btn-primary">
-                        <input type="checkbox" name="type" value="GG">
-                        <span class="fa fa-check"></span>&nbsp;&nbsp;GeoEngine & GeoDatastore
-                     </label>
-                     <label class="btn btn-primary">
-                        <input type="checkbox" name="type" value="SS">
-                        <span class="fa fa-check"></span>&nbsp;&nbsp;System & Server
-                     </label>
+                  <div class="btn-group project-type-selector {% if form.type.errors %}field-error{% endif %}"
+                       data-toggle="buttons">
+                     {% for value, text in form.type.choices %}
+                        {# 若form.type中有数据，且当前选项的value存在于form.type.data，则选中 #}
+                        {% if form.type.data %}
+                           {% set checked = True if value in form.type.data else False %}
+                        {% else %}
+                           {# 若没有数据，则默认选中第一个选项 #}
+                           {% set checked = loop.first %}
+                        {% endif %}
+
+                        <label class="btn btn-primary {% if checked %}active{% endif %}">
+                           <input type="checkbox" name="type" value="{{ value }}"
+                                  {% if checked %}checked{% endif %}>
+                           <span class="fa fa-check"></span>&nbsp;&nbsp;{{ text }}
+                        </label>
+                     {% endfor %}
                   </div>
                </div>
 
                <div class="form-group">
                   <div class="clearfix">
-                     <select class="form-control" name="bugget" id="bugget">
-                        <option>Project Bugget</option>
-                        <option>≤ $3K</option>
-                        <option>> $3K and ≤ $10K</option>
-                        <option>> $10K and ≤ $25K</option>
-                        <option>≥ $50K</option>
-                     </select>
-
-                     <select class="form-control" name="period" id="period">
-                        <option>Project Period</option>
-                        <option>a month</option>
-                        <option>a quarter</option>
-                        <option>half year</option>
-                        <option>a year</option>
-                     </select>
-
-                     <select class="form-control" name="hire_type" id="hire-type">
-                        <option>Hire Type</option>
-                        <option>dedicated</option>
-                        <option>affiliated + fulfilled</option>
-                        <option>contracted</option>
-                     </select>
+                     {{ select_field(form.bugget) }}
+                     {{ select_field(form.period) }}
+                     {{ select_field(form.hire_type) }}
                   </div>
                </div>
 
                <div class="form-group">
-                  <textarea rows=8 class="form-control" id="desc" name="desc"
-                            placeholder="Let us do the heavy lifting. What's on your mind?"></textarea>
+                  <textarea rows=8 id="desc" name="desc"
+                            class="form-control {% if form.desc.errors %}field-error{% endif %}"
+                            placeholder="Let us do the heavy lifting. What's on your mind?">{{ form.desc.data or "" }}</textarea>
                </div>
 
                <div class="form-group">
-                  <input type="text" class="form-control" name="name" id="name"
-                         placeholder="Your name">
+                  <input type="text" name="name" id="name"
+                         class="form-control {% if form.name.errors %}field-error{% endif %}"
+                         placeholder="Your name" value="{{ form.name.data or "" }}">
                </div>
 
                <div class="form-group">
-                  <input type="text" class="form-control" name="email" id="email"
-                         placeholder="Email">
+                  <input type="text" name="email" id="email"
+                         class="form-control {% if form.email.errors %}field-error{% endif %}"
+                         placeholder="Your email" value="{{ form.email.data or "" }}">
                </div>
 
                <button type="submit" class="btn btn-primary btn-lg btn-block">

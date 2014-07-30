@@ -24,6 +24,11 @@ def business():
     form = BusinessForm()
     if form.validate_on_submit():
         project = Project(**form.data)
+        # 若未选中任何值，则使用form.type的默认值
+        if form.type.data:
+            project.type = " + ".join(form.type.data)
+        else:
+            project.type = form.type.default
         db.session.add(project)
         db.session.commit()
         flash('Got it! We will reply to you soon.')

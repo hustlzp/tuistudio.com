@@ -1,14 +1,52 @@
 # coding: utf-8
 from flask_wtf import Form
-from wtforms import TextField, TextAreaField, SelectField
+from wtforms import StringField, TextAreaField, SelectField, ValidationError, SelectMultipleField, \
+    FieldList
 from wtforms.validators import DataRequired, Email
 
 
 class BusinessForm(Form):
-    """提交项目意向"""
-    # type = TextField('Type', validators=[DataRequired('Project type cannot be none.')])
-    bugget = TextField('Bugget', validators=[DataRequired('Bugget cannot be none.')])
-    period = TextField('Period', validators=[DataRequired('Period cannot be none.')])
-    desc = TextAreaField('Supplement')
-    name = TextField('Your name', validators=[DataRequired('Your name cannot be none.')])
-    email = TextField('Email', validators=[DataRequired('Email cannot be none.')])
+    """项目意向"""
+    type = SelectMultipleField(choices=[
+        ('WM', 'Web & Mobile'),
+        ('GG', 'GeoEngine & GeoDatastore'),
+        ('SS', 'System & Server')
+    ], default=['WM'])
+    bugget = SelectField(validators=[DataRequired()],
+                         choices=[
+                             ('Project Bugget', 'Project Bugget'),
+                             ('≤ $3K', '≤ $3K'),
+                             ('> $3K and ≤ $10K', '> $3K and ≤ $10K'),
+                             ('> $10K and ≤ $25K', '> $10K and ≤ $25K'),
+                             ('≥ $50K', '≥ $50K')
+                         ])
+    period = SelectField(validators=[DataRequired()],
+                         choices=[
+                             ('Project Period', 'Project Period'),
+                             ('a month', 'a month'),
+                             ('a quarter', 'a quarter'),
+                             ('half year', 'half year'),
+                             ('a year', 'a year')
+                         ])
+    hire_type = SelectField(validators=[DataRequired()],
+                            choices=[
+                                ('Hire Type', 'Hire Type'),
+                                ('dedicated', 'dedicated'),
+                                ('affiliated + fulfilled', 'affiliated + fulfilled'),
+                                ('contracted', 'contracted')
+                            ])
+    desc = TextAreaField(validators=[DataRequired()])
+    name = StringField(validators=[DataRequired()])
+    email = StringField(validators=[DataRequired(), Email()])
+
+    def validate_bugget(self, field):
+        if field.data == 'Project Bugget':
+            raise ValidationError()
+
+    def validate_period(self, field):
+        if field.data == 'Project Period':
+            raise ValidationError()
+
+    def validate_hire_type(self, field):
+        if field.data == 'Hire Type':
+            raise ValidationError()

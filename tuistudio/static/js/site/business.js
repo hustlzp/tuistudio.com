@@ -1,5 +1,5 @@
 $(function () {
     $('#bugget').fancySelect();
     $('#period').fancySelect();
-    $('#hire-type').fancySelect();
+    $('#hire_type').fancySelect();
 });

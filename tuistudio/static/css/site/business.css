@@ -28,6 +28,15 @@
 #page-business textarea {
   resize: vertical;
 }
+#page-business textarea.field-error,
+#page-business input.field-error,
+#page-business select.field-error + .trigger {
+  border: 1px solid red;
+}
+#page-business .project-type-selector.field-error label {
+  border-top-color: red;
+  border-bottom-color: #ff0000;
+}
 #page-business .project-type-selector .btn-primary {
   background-color: white;
   border: 1px solid #cccccc;
