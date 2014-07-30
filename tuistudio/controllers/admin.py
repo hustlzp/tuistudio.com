@@ -1,5 +1,6 @@
 # coding: utf-8
 from flask import render_template, Blueprint, redirect, flash, url_for
+from ..models import Project
 
 bp = Blueprint('admin', __name__)
 
@@ -7,6 +8,7 @@ bp = Blueprint('admin', __name__)
 @bp.route('/')
 def index():
     """管理首页"""
-    return render_template('admin/index.html')
+    projects = Project.query
+    return render_template('admin/index.html', projects=projects)
 
 

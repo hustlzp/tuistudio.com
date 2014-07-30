@@ -3,10 +3,36 @@
 {% block page_title %}Admin - TUI Studio{% endblock %}
 {% block page_id %}page-admin{% endblock %}
 
-{% block body %}
+{% block page_content %}
+   <div class="container">
+      <h1>Dashboard</h1>
+   
+      <table class="table table-bordered table-hover table-striped">
+         <thead>
+         <tr>
+            <th>Project Type</th>
+            <th>Bugget</th>
+            <th>Period</th>
+            <th>Hire Type</th>
+            <th>Description</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Time</th>
+         </tr>
+         </thead>
 
-   <table class="table table-bordered table-hover table-striped">
-
-   </table>
-
+         {% for p in projects %}
+            <tr>
+               <td>{{ p.type }}</td>
+               <td>{{ p.bugget }}</td>
+               <td>{{ p.period }}</td>
+               <td>{{ p.hire_type }}</td>
+               <td>{{ p.desc }}</td>
+               <td>{{ p.name }}</td>
+               <td>{{ p.email }}</td>
+               <td>{{ p.created_at }}</td>
+            </tr>
+         {% endfor %}
+      </table>
+   </div>
 {% endblock %}
