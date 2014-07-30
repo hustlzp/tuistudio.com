@@ -78,6 +78,11 @@ a:hover {
   padding-bottom: 20px;
   font-size: 22px;
 }
+.navbar .navbar-header .navbar-brand sup {
+  font-size: 12px;
+  line-height: 1;
+  top: -1em;
+}
 .navbar .navbar-collapse {
   padding-top: 15px;
   padding-bottom: 15px;

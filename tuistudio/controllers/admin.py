@@ -8,7 +8,7 @@ bp = Blueprint('admin', __name__)
 @bp.route('/')
 def index():
     """管理首页"""
-    projects = Project.query
+    projects = Project.query.order_by(Project.created_at.desc())
     return render_template('admin/index.html', projects=projects)
 
 
