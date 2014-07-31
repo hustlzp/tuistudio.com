@@ -29,7 +29,8 @@ $(function () {
     });
 
     // 根据屏幕大小适配banner高度
-    var bannerHeight = $(window).height() - 81;
+    var navHeight = $('.navbar').outerHeight();
+    var bannerHeight = $(window).height() - navHeight;
     var bannerTextHeight = $('.banner-text').height();
     $('.banner').css({
         'height': bannerHeight + 'px',
