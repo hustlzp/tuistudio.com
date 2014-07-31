@@ -19,27 +19,42 @@
 #page-index .navbar {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
-#page-index .market {
-  padding: 140px 0 20px 0;
-  background: url('/static/image/triangles.png') repeat;
+#page-index .banner {
+  padding-top: 120px;
+  height: 600px;
+  background: url('/static/image/banner.png') no-repeat center center;
+  background-size: cover;
   border-bottom: 1px solid #EEEEEE;
+  color: white;
+  position: relative;
 }
-#page-index .market h1 {
+#page-index .banner h1 {
   font-size: 65px;
-  font-weight: normal;
+  font-weight: bold;
   margin-bottom: 20px;
 }
-#page-index .market p {
+#page-index .banner p {
   font-size: 22px;
   margin-bottom: 140px;
-  color: #666;
 }
-#page-index .market .icons {
+#page-index .banner .icons {
   text-align: center;
   font-size: 26px;
+  position: absolute;
+  display: block;
+  width: 100%;
+  left: 0;
+  bottom: 20px;
 }
-#page-index .market .icons li {
+#page-index .banner .icons li {
   padding: 0 8px;
+}
+#page-index .banner .icons li a {
+  color: white;
+  opacity: .5;
+}
+#page-index .banner .icons li a:hover {
+  opacity: 1;
 }
 #page-index h1 {
   font-size: 30px;
