@@ -24,7 +24,6 @@
   height: 600px;
   background: url('/static/image/banner.png') no-repeat center center;
   background-size: cover;
-  border-bottom: 1px solid #EEEEEE;
   color: white;
   position: relative;
 }
@@ -32,6 +31,7 @@
   font-size: 65px;
   font-weight: bold;
   margin-bottom: 20px;
+  margin-top: 0;
 }
 #page-index .banner p {
   font-size: 22px;

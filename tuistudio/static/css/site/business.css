@@ -20,7 +20,7 @@
   margin: 50px 0 40px 0;
 }
 #page-business .form-wap {
-  width: 513px;
+  width: 494px;
 }
 #page-business .form-group {
   margin-bottom: 20px;
@@ -57,12 +57,13 @@
   color: #1b90cd;
 }
 #page-business .fancy-select {
-  width: 160px;
+  width: 154px;
   margin-left: 16px;
   float: left;
 }
 #page-business .fancy-select .trigger {
   color: #555555;
+  padding: 10px 24px 10px 10px;
 }
 #page-business .fancy-select * {
   transition: all 200ms ease-out;

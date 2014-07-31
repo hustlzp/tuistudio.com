@@ -28,6 +28,14 @@ $(function () {
         }
     });
 
+    // 根据屏幕大小适配banner高度
+    var bannerHeight = $(window).height() - 81;
+    var bannerTextHeight = $('.banner-text').height();
+    $('.banner').css({
+        'height': bannerHeight + 'px',
+        'padding-top': (bannerHeight - bannerTextHeight) * 0.45 + 'px'
+    });
+
     /**
      * A wapper of jQuery.scrollTo
      * @param selector
