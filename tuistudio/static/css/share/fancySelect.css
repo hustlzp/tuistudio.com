@@ -1,20 +1,20 @@
 @font-face {
-  font-family: 'Oxygen';
+  font-family: 'lato';
   font-style: normal;
-  font-weight: 300;
-  src: local('Oxygen Light'), local('Oxygen-Light'), url(/static/fonts/AwBqWF2kjhlybWamaKMPcbO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+  font-weight: lighter;
+  src: url(/static/fonts/lato-light-webfont.woff) format('woff');
 }
 @font-face {
-  font-family: 'Oxygen';
+  font-family: 'lato';
   font-style: normal;
-  font-weight: 400;
-  src: local('Oxygen'), local('Oxygen-Regular'), url(/static/fonts/eAWT4YudG0otf3rlsJD6zOvvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+  font-weight: normal;
+  src: url(/static/fonts/lato-regular-webfont.woff) format('woff');
 }
 @font-face {
-  font-family: 'Oxygen';
+  font-family: 'latobold';
   font-style: normal;
-  font-weight: 700;
-  src: local('Oxygen Bold'), local('Oxygen-Bold'), url(/static/fonts/yVHpdQrmTj9Kax1tmFSx2rO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+  font-weight: bold;
+  src: url(/static/fonts/lato-bold-webfont.woff) format('woff');
 }
 div.fancy-select {
   position: relative;
