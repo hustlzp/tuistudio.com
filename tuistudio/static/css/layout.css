@@ -106,7 +106,6 @@ a:hover {
   padding: 45px 0;
   line-height: 1;
   margin-top: 80px;
-  font-size: 13px;
   color: white;
 }
 .footer .footer-left .links {
@@ -148,5 +147,5 @@ a:hover {
 }
 .footer .footer-right .logo {
   font-size: 22px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
