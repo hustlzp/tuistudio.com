@@ -167,14 +167,38 @@
   font-size: 18px;
   margin-bottom: 15px;
 }
-#page-index .contact ul {
-  padding: 30px 0 0 50px;
+#page-index .contact .map-wap {
+  position: relative;
+}
+#page-index .contact .map-wap .contact-panel {
+  position: absolute;
+  padding: 40px 0 0 50px;
+  left: 50%;
+  height: 220px;
+  width: 500px;
+  top: 100px;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+#page-index .contact .map-wap .contact-panel .title {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+#page-index .contact .map-wap .contact-panel ul {
   font-size: 16px;
 }
-#page-index .contact ul li {
+#page-index .contact .map-wap .contact-panel ul li {
   margin-bottom: 10px;
 }
-#page-index .contact ul li .fa,
-#page-index .contact ul li .glyphicon {
+#page-index .contact .map-wap .contact-panel ul li .fa,
+#page-index .contact .map-wap .contact-panel ul li .glyphicon {
   margin-right: 10px;
+}
+#page-index .contact .map-wap #map-canvas {
+  height: 460px;
+}
+#page-index .footer {
+  margin-top: 0;
 }
