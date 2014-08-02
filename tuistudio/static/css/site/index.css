@@ -219,17 +219,17 @@
 }
 #page-index .works {
   text-align: center;
-  padding-bottom: 70px;
+  padding-bottom: 80px;
 }
 #page-index .works .work-logos-wap {
-  width: 810px;
+  width: 830px;
   margin: 0 auto;
 }
 #page-index .works .work-logos-wap .work-logo {
   width: 140px;
   height: 140px;
   float: left;
-  margin-left: 25px;
+  margin-left: 30px;
   position: relative;
   cursor: pointer;
   border-radius: 2px;
