@@ -14,7 +14,7 @@ $(function () {
     });
 
     // 点击work图标滑动
-    $('.works img').click(function () {
+    $('.work-logo').click(function () {
         var targetClass = "." + $(this).data("scroll-target");
         scrollTo(targetClass);
     });
