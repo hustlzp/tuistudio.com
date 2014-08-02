@@ -1,5 +1,125 @@
 @import "../utils";
 
+@-webkit-keyframes orangeIn {
+  0% {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: .95
+  }
+}
+
+@-moz-keyframes orangeIn {
+  0% {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: .95
+  }
+}
+
+@-ms-keyframes orangeIn {
+  0% {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: .95
+  }
+}
+
+@keyframes orangeIn {
+  0% {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: .95
+  }
+}
+
+@-webkit-keyframes orangeOut {
+  0% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: .95
+  }
+  100% {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0
+  }
+}
+
+@-moz-keyframes orangeOut {
+  0% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: .95
+  }
+  100% {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0
+  }
+}
+
+@-ms-keyframes orangeOut {
+  0% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: .95
+  }
+  100% {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0
+  }
+}
+
+@keyframes orangeOut {
+  0% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: .95
+  }
+  100% {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0
+  }
+}
+
 #page-index {
   .navbar {
     box-shadow: 0 0 5px rgba(0, 0, 0, .1);
@@ -93,16 +213,55 @@
     text-align: center;
     padding-bottom: 70px;
 
-    .title {
-    }
+    .work-logos-wap {
+      width: 810px;
+      margin: 0 auto;
 
-    img {
-      display: inline-block;
-      height: 47px;
-      margin-left: 50px;
+      .work-logo {
+        width: 140px;
+        height: 140px;
+        float: left;
+        margin-left: 25px;
+        position: relative;
+        cursor: pointer;
+        border-radius: 2px;
+        background-color: #f4f4f5;
 
-      &:first-child {
-        margin-left: 0;
+        &:first-child {
+          margin-left: 0;
+        }
+
+        .bg {
+          -webkit-animation: orangeOut 0.4s ease;
+          animation: orangeOut 0.4s ease;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border-radius: 2px;
+          background-color: @main-color;
+          opacity: 0;
+        }
+
+        .logo {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: url(/static/image/lemaker_gray.png) no-repeat center;
+
+          &:hover{
+            background: url(/static/image/lemaker_light.png) no-repeat center;
+          }
+        }
+
+        &:hover .bg {
+          -webkit-animation: orangeIn 0.4s ease;
+          animation: orangeIn 0.4s ease;
+          opacity: 1;
+        }
       }
     }
   }
