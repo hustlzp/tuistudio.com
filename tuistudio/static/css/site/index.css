@@ -130,6 +130,12 @@
 #page-index .work.lemaker {
   background-color: #ebeced;
 }
+#page-index .work.zj {
+  background-color: #115eac;
+}
+#page-index .work.zj h1 {
+  color: #ffffff;
+}
 #page-index .work.tq {
   background-color: #36a9e5;
 }
@@ -156,9 +162,6 @@
   position: absolute;
   top: 35px;
   left: 35px;
-}
-#page-index .techs {
-  padding-top: 90px;
 }
 #page-index .techs img {
   width: 80%;
