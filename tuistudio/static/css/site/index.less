@@ -232,8 +232,8 @@
         }
 
         .bg {
-          -webkit-animation: orangeOut 0.4s ease;
-          animation: orangeOut 0.4s ease;
+          //          -webkit-animation: orangeOut 0.4s ease;
+          //          animation: orangeOut 0.4s ease;
           position: absolute;
           top: 0;
           left: 0;
@@ -252,16 +252,21 @@
           height: 100%;
           background: url(/static/image/lemaker_gray.png) no-repeat center;
 
-          &:hover{
-            background: url(/static/image/lemaker_light.png) no-repeat center;
+          &:hover {
+            //            background: url(/static/image/lemaker_light.png) no-repeat center;
           }
         }
 
-        &:hover .bg {
-          -webkit-animation: orangeIn 0.4s ease;
-          animation: orangeIn 0.4s ease;
-          opacity: 1;
+        &:hover {
+          background-color: #e8e8e8;
+          .transition();
         }
+
+        //        &:hover .bg {
+        //          -webkit-animation: orangeIn 0.4s ease;
+        //          animation: orangeIn 0.4s ease;
+        //          opacity: 1;
+        //        }
       }
     }
   }
