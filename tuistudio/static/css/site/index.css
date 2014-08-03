@@ -157,7 +157,7 @@
 }
 #page-index .banner h1 {
   font-size: 65px;
-  font-weight: bold;
+  font-weight: normal;
   margin-bottom: 20px;
   margin-top: 0;
 }
@@ -316,6 +316,12 @@
 #page-index .process p {
   font-size: 18px;
   margin-bottom: 15px;
+}
+#page-index .contact {
+  padding-top: 70px;
+}
+#page-index .contact h1 {
+  margin-top: 0;
 }
 #page-index .contact .map-wap {
   position: relative;
