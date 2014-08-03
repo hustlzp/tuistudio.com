@@ -99,15 +99,25 @@ $(function () {
         });
     }
 
-//    google.maps.event.addDomListener(window, 'load', initialize);
-
+    // 显示地图
     $('.show-map').click(function () {
         $('.map-wap').show();
         initialize();
     });
 
+    // 隐藏地图
     $('.hide-map').click(function () {
         $('.map-wap').hide();
+    });
+
+    // 显示地图
+    $('.show-phone').click(function () {
+        $('.phone-wap').show();
+    });
+
+    // 隐藏地图
+    $('.hide-phone').click(function () {
+        $('.phone-wap').hide();
     });
 
     /**

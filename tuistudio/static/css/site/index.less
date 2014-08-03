@@ -356,6 +356,7 @@
       margin-top: 0;
     }
 
+    // 地图
     .map-wap {
       position: absolute;
       display: none;
@@ -381,12 +382,61 @@
       }
     }
 
+    // 电话
+    .phone-wap {
+      position: absolute;
+      display: none;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      height: 460px;
+      z-index: 1000;
+      background-color: #2e353b;
+      color: #d0d3d8;
+      text-align: center;
+
+      .phonenum {
+        padding-top: 135px;
+        font-size: 80px;
+        margin-bottom: 20px;
+
+        span {
+          font-size: 70px;
+          color: #50575E;
+        }
+      }
+
+      .pronouciation {
+        display: inline-block;
+        font-size: 20px;
+        font-weight: lighter;
+        padding: 8px 18px;
+        border-radius: 2px;
+        background-color: #42494e;
+        color: #d0d3d8;
+
+        span {
+          color: #6F757A;
+        }
+      }
+
+      .hide-phone {
+        position: absolute;
+        font-weight: lighter;
+        right: 30px;
+        top: 30px;
+        font-size: 50px;
+        z-index: 1002;
+        cursor: pointer;
+      }
+    }
+
     .text-wap {
-      padding: 30px 0 0 50px;
+      padding: 50px 0 0 50px;
 
       .title {
         font-size: 26px;
-        margin-bottom: 24px;
+        margin-bottom: 20px;
       }
 
       ul {
