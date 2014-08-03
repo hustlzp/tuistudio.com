@@ -192,7 +192,7 @@
 }
 #page-index .services {
   padding-bottom: 70px;
-  background-color: #EEEEEF;
+  background-color: #EEEEEE;
 }
 #page-index .services .service {
   text-align: center;
@@ -233,7 +233,7 @@
   position: relative;
   cursor: pointer;
   border-radius: 2px;
-  background-color: #f4f4f5;
+  background-color: #f4f4f4;
 }
 #page-index .works .work-logos-wap .work-logo:first-child {
   margin-left: 0;
@@ -310,8 +310,15 @@
   top: 35px;
   left: 35px;
 }
+#page-index .techs {
+  padding-bottom: 70px;
+}
 #page-index .techs img {
   width: 80%;
+}
+#page-index .process {
+  padding-bottom: 80px;
+  background-color: #eeeeee;
 }
 #page-index .process p {
   font-size: 18px;
