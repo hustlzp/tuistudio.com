@@ -102,6 +102,7 @@ $(function () {
     // 显示地图
     $('.show-map').click(function () {
         $('.map-wap').show();
+        scrollTo('.contact');
         initialize();
     });
 
@@ -113,6 +114,7 @@ $(function () {
     // 显示地图
     $('.show-phone').click(function () {
         $('.phone-wap').show();
+        scrollTo('.contact');
     });
 
     // 隐藏地图
