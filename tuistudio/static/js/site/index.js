@@ -40,36 +40,46 @@ $(function () {
     // Google Maps
     var map;
     var styleArray = [
-        {"featureType": "water", "stylers": [
-            {"color": "#46bcec"},
-            {"visibility": "on"}
-        ]},
         {"featureType": "landscape", "stylers": [
-            {"color": "#f2f2f2"}
-        ]},
-        {"featureType": "road", "stylers": [
-            {"saturation": -100},
-            {"lightness": 45}
+            {"hue": "#F1FF00"},
+            {"saturation": -27.4},
+            {"lightness": 9.4},
+            {"gamma": 1}
         ]},
         {"featureType": "road.highway", "stylers": [
-            {"visibility": "simplified"}
+            {"hue": "#0099FF"},
+            {"saturation": -20},
+            {"lightness": 36.4},
+            {"gamma": 1}
         ]},
-        {"featureType": "road.arterial", "elementType": "labels.icon", "stylers": [
-            {"visibility": "off"}
+        {"featureType": "road.arterial", "stylers": [
+            {"hue": "#00FF4F"},
+            {"saturation": 0},
+            {"lightness": 0},
+            {"gamma": 1}
         ]},
-        {"featureType": "administrative", "elementType": "labels.text.fill", "stylers": [
-            {"color": "#444444"}
+        {"featureType": "road.local", "stylers": [
+            {"hue": "#FFB300"},
+            {"saturation": -38},
+            {"lightness": 11.2},
+            {"gamma": 1}
         ]},
-        {"featureType": "transit", "stylers": [
-            {"visibility": "off"}
+        {"featureType": "water", "stylers": [
+            {"hue": "#00B6FF"},
+            {"saturation": 4.2},
+            {"lightness": -63.4},
+            {"gamma": 1}
         ]},
         {"featureType": "poi", "stylers": [
-            {"visibility": "off"}
+            {"hue": "#9FFF00"},
+            {"saturation": 0},
+            {"lightness": 0},
+            {"gamma": 1}
         ]}
     ];
 
     function initialize() {
-        var location = new google.maps.LatLng(36.9685219, -85.68080429999999);
+        var location = new google.maps.LatLng(36.9685219, -86.48080429999999);
         var marker_location = new google.maps.LatLng(36.9685219, -86.48080429999999);
         var mapOptions = {
             zoom: 9,
@@ -89,7 +99,16 @@ $(function () {
         });
     }
 
-    google.maps.event.addDomListener(window, 'load', initialize);
+//    google.maps.event.addDomListener(window, 'load', initialize);
+
+    $('.show-map').click(function () {
+        $('.map-wap').show();
+        initialize();
+    });
+
+    $('.hide-map').click(function () {
+        $('.map-wap').hide();
+    });
 
     /**
      * A wapper of jQuery.scrollTo

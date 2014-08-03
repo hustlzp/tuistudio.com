@@ -206,44 +206,40 @@
       <h1 class="title">CONTACT</h1>
 
       <div class="map-wap">
-         <div class="contact-panel">
-            <div class="title">Please feel free to contact us anytime.</div>
-            <ul class="list-unstyled">
-               <li>
-                  <span class="fa fa-envelope-o"></span> hi@tuistudio.com
-               </li>
-               <li>
-                  <span class="glyphicon glyphicon-phone-alt"></span> 1-270-303-0721
-               </li>
-               <li>
-                  <span class="glyphicon glyphicon-home"></span> 1012 E 10th Ave, Bowling Green, KY
-                  42103
-               </li>
-            </ul>
-         </div>
+         <span class="glyphicon glyphicon-remove-circle hide-map"></span>
          <div id="map-canvas"></div>
       </div>
 
-      {#         <div class="row">#}
-      {#            <div class="col-sm-7">#}
-      {#               <img class="img-responsive" src="{{ static('image/usa_map.jpg') }}" alt=""/>#}
-      {#            </div>#}
-      {##}
-      {#            <div class="col-sm-5">#}
-      {#               <ul class="list-unstyled">#}
-      {#                  <li>#}
-      {#                     <span class="glyphicon glyphicon-home"></span> Bowling Green, KY#}
-      {#                  </li>#}
-      {#                  <li>#}
-      {#                     <span class="fa fa-envelope-o"></span> hi@tuistudio.com#}
-      {#                  </li>#}
-      {#                  <li>#}
-      {#                     <span class="glyphicon glyphicon-phone-alt"></span> 1-270-303-0721#}
-      {#                  </li>#}
-      {#               </ul>#}
-      {#            </div>#}
-      {#         </div>#}
-      {#      </div>#}
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-6 image-wap">
+               <img class="img-responsive" src="{{ static('image/usa_map.jpg') }}" alt=""/>
+            </div>
+
+            <div class="col-sm-6 text-wap">
+               <div class="title">Please feel free to contact us anytime.</div>
+
+               <ul class="list-unstyled">
+                  <li>
+                     <a href="javascript:void(0)" class="show-map">
+                        <span class="glyphicon glyphicon-home"></span>
+                        1012 E 10th Ave, Bowling Green, KY
+                     </a>
+                  </li>
+                  <li>
+                     <a href="mailto:hi@tuistudio.com">
+                        <span class="fa fa-envelope-o"></span> hi@tuistudio.com
+                     </a>
+                  </li>
+                  <li>
+                     <a href="javascript:void(0)">
+                        <span class="glyphicon glyphicon-phone-alt"></span> 1-270-303-0721
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
    </div>
 
    {#   <div>#}
