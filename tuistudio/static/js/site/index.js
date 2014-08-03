@@ -82,7 +82,7 @@ $(function () {
         var location = new google.maps.LatLng(36.9685219, -86.48080429999999);
         var marker_location = new google.maps.LatLng(36.9685219, -86.48080429999999);
         var mapOptions = {
-            zoom: 9,
+            zoom: 18,
             scrollwheel: false,
             mapTypeControl: false,
             center: location,
