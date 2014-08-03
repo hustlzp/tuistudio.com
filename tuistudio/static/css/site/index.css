@@ -192,27 +192,27 @@
 }
 #page-index .services {
   padding-bottom: 70px;
-  background-color: #EEEEEE;
+  background-color: #EEEEEF;
 }
 #page-index .services .service {
   text-align: center;
 }
 #page-index .services .service .fa,
 #page-index .services .service .iconfont {
-  font-size: 80px;
+  font-size: 85px;
   line-height: 1;
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   color: #36a9e5;
 }
 #page-index .services .service .title {
-  font-size: 18px;
-  margin-bottom: 15px;
+  font-size: 20px;
+  margin-bottom: 20px;
 }
 #page-index .services .service .gap {
   border-top: 1px solid #cccccc;
   width: 150px;
-  margin: 0 auto 15px auto;
+  margin: 0 auto 20px auto;
 }
 #page-index .services .service .desc {
   padding: 0 20px;
