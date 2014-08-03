@@ -29,13 +29,13 @@ $(function () {
     });
 
     // 根据屏幕大小适配banner高度
-    var navHeight = $('.navbar').outerHeight();
-    var bannerHeight = $(window).height() - navHeight;
-    var bannerTextHeight = $('.banner-text').height();
-    $('.banner').css({
-        'height': bannerHeight + 'px',
-        'padding-top': (bannerHeight - bannerTextHeight) * 0.45 + 'px'
-    });
+    //    var navHeight = $('.navbar').outerHeight();
+    //    var bannerHeight = $(window).height() - navHeight;
+    //    var bannerTextHeight = $('.banner-text').height();
+    //    $('.banner').css({
+    //        'height': bannerHeight + 'px',
+    //        'padding-top': (bannerHeight - bannerTextHeight) * 0.45 + 'px'
+    //    });
 
     // Google Maps
     var map;
