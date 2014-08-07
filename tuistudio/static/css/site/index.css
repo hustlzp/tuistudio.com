@@ -310,11 +310,22 @@
   top: 35px;
   left: 35px;
 }
-#page-index .techs {
+#page-index .techs img.tech-icons {
   padding-bottom: 70px;
-}
-#page-index .techs img {
   width: 80%;
+}
+#page-index .techs .screen {
+  text-align: center;
+}
+#page-index .techs .screen.design-screen {
+  text-align: left;
+}
+#page-index .techs .screen.right-screen {
+  text-align: right;
+}
+#page-index .techs .screen img {
+  width: 95%;
+  display: inline-block;
 }
 #page-index .process {
   padding-bottom: 80px;

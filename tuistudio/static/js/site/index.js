@@ -95,7 +95,6 @@ $(function () {
 
         var marker = new google.maps.Marker({
             map: map,
-            icon: '/static/image/logo_sm.png',
             position: marker_location
         });
     }
