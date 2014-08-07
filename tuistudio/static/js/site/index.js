@@ -79,8 +79,8 @@ $(function () {
     ];
 
     function initialize() {
-        var location = new google.maps.LatLng(36.9685219, -86.48080429999999);
-        var marker_location = new google.maps.LatLng(36.9685219, -86.48080429999999);
+        var location = new google.maps.LatLng(36.983546158641936, -86.4347916841507);
+        var marker_location = new google.maps.LatLng(36.983546158641936, -86.4347916841507);
         var mapOptions = {
             zoom: 18,
             scrollwheel: false,
