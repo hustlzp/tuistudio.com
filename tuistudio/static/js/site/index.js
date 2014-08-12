@@ -20,13 +20,13 @@ $(function () {
     });
 
     // 下滑到一定距离，压缩nav
-    $(window).scroll(function () {
-        if ($(window).scrollTop() > 360) {
-            $('.navbar').addClass('condensed');
-        } else {
-            $('.navbar').removeClass('condensed');
-        }
-    });
+//    $(window).scroll(function () {
+//        if ($(window).scrollTop() > 360) {
+//            $('.navbar').addClass('condensed');
+//        } else {
+//            $('.navbar').removeClass('condensed');
+//        }
+//    });
 
     // 根据屏幕大小适配banner高度
     //    var navHeight = $('.navbar').outerHeight();
@@ -128,7 +128,7 @@ $(function () {
      */
     function scrollTo(selector) {
         $.scrollTo(selector, 300, {
-            offset: -50
+            offset: -80
         });
     }
 });

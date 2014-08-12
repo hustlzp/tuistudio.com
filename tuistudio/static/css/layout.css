@@ -82,7 +82,7 @@ a:hover {
   padding-bottom: 0px;
 }
 .navbar .navbar-header {
-  padding-top: 15px;
+  padding-top: 0px;
   transition: all 200ms ease-out;
   -webkit-transition: all 200ms ease-out;
   -moz-transition: all 200ms ease-out;
@@ -91,8 +91,11 @@ a:hover {
 }
 .navbar .navbar-header .navbar-brand {
   display: inline-block;
-  padding-bottom: 20px;
+  padding: 10px 0 0 20px;
   font-size: 22px;
+}
+.navbar .navbar-header .navbar-brand img {
+  width: 60px;
 }
 .navbar .navbar-header .navbar-brand sup {
   font-size: 12px;
