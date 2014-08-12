@@ -335,6 +335,10 @@
   font-size: 18px;
   margin-bottom: 25px;
 }
+#page-index .process img {
+  max-width: 200px;
+  border-radius: 5px;
+}
 #page-index .contact {
   padding-top: 80px;
   padding-bottom: 70px;
