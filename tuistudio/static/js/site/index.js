@@ -20,13 +20,13 @@ $(function () {
     });
 
     // 下滑到一定距离，压缩nav
-//    $(window).scroll(function () {
-//        if ($(window).scrollTop() > 360) {
-//            $('.navbar').addClass('condensed');
-//        } else {
-//            $('.navbar').removeClass('condensed');
-//        }
-//    });
+    //    $(window).scroll(function () {
+    //        if ($(window).scrollTop() > 360) {
+    //            $('.navbar').addClass('condensed');
+    //        } else {
+    //            $('.navbar').removeClass('condensed');
+    //        }
+    //    });
 
     // 根据屏幕大小适配banner高度
     //    var navHeight = $('.navbar').outerHeight();
@@ -36,6 +36,14 @@ $(function () {
     //        'height': bannerHeight + 'px',
     //        'padding-top': (bannerHeight - bannerTextHeight) * 0.45 + 'px'
     //    });
+
+    // process图片的hover效果
+    $('.process-img').hover(function () {
+        $(this).css('opacity', 1);
+        $('.process-img').not(this).css('opacity', 0.6);
+    }, function () {
+        $('.process-img').css('opacity', 1);
+    });
 
     // Google Maps
     var map;

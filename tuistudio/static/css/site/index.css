@@ -346,7 +346,7 @@
   -o-transition: all 150ms ease-out;
 }
 #page-index .process img:hover {
-  margin-top: -10px;
+  margin-top: -8px;
 }
 #page-index .contact {
   padding-top: 80px;
