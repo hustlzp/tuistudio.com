@@ -317,15 +317,33 @@
 #page-index .techs .screen {
   text-align: center;
 }
-#page-index .techs .screen.design-screen {
-  text-align: left;
-}
-#page-index .techs .screen.right-screen {
-  text-align: right;
-}
 #page-index .techs .screen img {
-  width: 95%;
+  max-width: 100%;
   display: inline-block;
+}
+#page-index .techs .screen .design-screen {
+  width: 40%;
+}
+#page-index .techs .screen .tech-screen {
+  width: 40%;
+}
+#page-index .techs .screen .love {
+  padding: 0 20px;
+}
+@media (max-width: 768px) {
+  #page-index .techs .screen img {
+    display: block;
+    margin: 0 auto;
+  }
+  #page-index .techs .screen .design-screen {
+    width: 80%;
+  }
+  #page-index .techs .screen .tech-screen {
+    width: 80%;
+  }
+  #page-index .techs .screen .love {
+    padding: 25px 0px;
+  }
 }
 #page-index .process {
   padding-bottom: 80px;
