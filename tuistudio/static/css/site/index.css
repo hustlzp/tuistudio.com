@@ -376,6 +376,7 @@
 }
 #page-index .contact .map-wap {
   position: absolute;
+  background-color: #e9eae1;
   display: none;
   top: 0px;
   left: 0;
