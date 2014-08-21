@@ -210,124 +210,138 @@
     }
   }
 
-  .works {
-    text-align: center;
-    padding-bottom: 80px;
-
-    .work-logos-wap {
-      width: 830px;
-      margin: 0 auto;
-
-      .work-logo {
-        width: 140px;
-        height: 140px;
-        float: left;
-        margin-left: 30px;
-        position: relative;
-        cursor: pointer;
-        border-radius: 2px;
-        background-color: #f4f4f4;
-
-        &:first-child {
-          margin-left: 0;
-        }
-
-        .bg {
-          //                    -webkit-animation: orangeOut 0.4s ease;
-          //                    animation: orangeOut 0.4s ease;
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          border-radius: 2px;
-          background-color: @main-color;
-          opacity: 0;
-        }
-
-        .logo {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background: url(/static/image/lemaker_gray.png) no-repeat center;
-
-          &:hover {
-            //            background: url(/static/image/lemaker_light.png) no-repeat center;
-          }
-        }
-
-        &:hover {
-          background-color: #e8e8e8;
-          .transition();
-        }
-
-        //        &:hover .bg {
-        //          -webkit-animation: orangeIn 0.4s ease;
-        //          animation: orangeIn 0.4s ease;
-        //          opacity: 1;
-        //        }
-      }
-    }
-  }
+  //  .works {
+  //    text-align: center;
+  //    padding-bottom: 80px;
+  //
+  //    .work-logos-wap {
+  //      width: 830px;
+  //      margin: 0 auto;
+  //
+  //      .work-logo {
+  //        width: 140px;
+  //        height: 140px;
+  //        float: left;
+  //        margin-left: 30px;
+  //        position: relative;
+  //        cursor: pointer;
+  //        border-radius: 2px;
+  //        background-color: #f4f4f4;
+  //
+  //        &:first-child {
+  //          margin-left: 0;
+  //        }
+  //
+  //        .bg {
+  //          //                    -webkit-animation: orangeOut 0.4s ease;
+  //          //                    animation: orangeOut 0.4s ease;
+  //          position: absolute;
+  //          top: 0;
+  //          left: 0;
+  //          width: 100%;
+  //          height: 100%;
+  //          border-radius: 2px;
+  //          background-color: @main-color;
+  //          opacity: 0;
+  //        }
+  //
+  //        .logo {
+  //          position: absolute;
+  //          top: 0;
+  //          left: 0;
+  //          width: 100%;
+  //          height: 100%;
+  //          background: url(/static/image/lemaker_gray.png) no-repeat center;
+  //
+  //          &:hover {
+  //            //            background: url(/static/image/lemaker_light.png) no-repeat center;
+  //          }
+  //        }
+  //
+  //        &:hover {
+  //          background-color: #e8e8e8;
+  //          .transition();
+  //        }
+  //
+  //        //        &:hover .bg {
+  //        //          -webkit-animation: orangeIn 0.4s ease;
+  //        //          animation: orangeIn 0.4s ease;
+  //        //          opacity: 1;
+  //        //        }
+  //      }
+  //    }
+  //  }
 
   .work {
-    padding: 0px 0 70px 0;
-    background-color: greenyellow;
+    //    padding: 0px 0 70px 0;
+    //    background-color: greenyellow;
 
-    &.aod {
-      background-color: rgb(93, 196, 173);
-
-      h1 {
-        color: #FFFFFF;
-      }
+    img {
+      width: 100%;
     }
 
-    &.lemaker {
-      background-color: #bfd6d9;
-    }
+    //    &.aod {
+    //      background-color: rgb(93, 196, 173);
+    //
+    //      h1 {
+    //        color: #FFFFFF;
+    //      }
+    //    }
+    //
+    //    &.lemaker {
+    //      background-color: #bfd6d9;
+    //    }
+    //
+    //    &.zj {
+    //      background-color: #3382D3;
+    //
+    //      h1 {
+    //        color: #ffffff;
+    //      }
+    //    }
+    //
+    //    &.tq {
+    //      background-color: @main-color;
+    //
+    //      h1 {
+    //        color: #FFFFFF;
+    //      }
+    //    }
+    //
+    //    &.lft {
+    //      h1 {
+    //        color: #FFFFFF;
+    //      }
+    //
+    //      background-color: rgb(200, 161, 91);
+    //    }
+    //
+    //    .image-wap {
+    //      height: 510px;
+    //      width: 739px;
+    //      background: url(/static/image/iMac.png) no-repeat center center;
+    //      margin: 0 auto;
+    //      overflow: hidden;
+    //      position: relative;
+    //
+    //      img {
+    //        width: 669px;
+    //        box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+    //        position: absolute;
+    //        top: 35px;
+    //        left: 35px;
+    //      }
+    //  }
+  }
 
-    &.zj {
-      background-color: #3382D3;
-
-      h1 {
-        color: #ffffff;
-      }
-    }
-
-    &.tq {
-      background-color: @main-color;
-
-      h1 {
-        color: #FFFFFF;
-      }
-    }
-
-    &.lft {
-      h1 {
-        color: #FFFFFF;
-      }
-
-      background-color: rgb(200, 161, 91);
-    }
-
-    .image-wap {
-      height: 510px;
-      width: 739px;
-      background: url(/static/image/iMac.png) no-repeat center center;
-      margin: 0 auto;
-      overflow: hidden;
-      position: relative;
-
-      img {
-        width: 669px;
-        box-shadow: 0 0 5px rgba(0, 0, 0, .3);
-        position: absolute;
-        top: 35px;
-        left: 35px;
-      }
-    }
+  .slogan {
+    text-align: center;
+    padding: 80px 0;
+    line-height: 1.8;
+    font-size: 30px;
+    font-weight: lighter;
+    color: white;
+    background-color: rgb(0, 155, 225);
   }
 
   .techs {
@@ -512,4 +526,5 @@
   .footer {
     margin-top: 0;
   }
+
 }

@@ -217,98 +217,17 @@
 #page-index .services .service .desc {
   padding: 0 20px;
 }
-#page-index .works {
+#page-index .work img {
+  width: 100%;
+}
+#page-index .slogan {
   text-align: center;
-  padding-bottom: 80px;
-}
-#page-index .works .work-logos-wap {
-  width: 830px;
-  margin: 0 auto;
-}
-#page-index .works .work-logos-wap .work-logo {
-  width: 140px;
-  height: 140px;
-  float: left;
-  margin-left: 30px;
-  position: relative;
-  cursor: pointer;
-  border-radius: 2px;
-  background-color: #f4f4f4;
-}
-#page-index .works .work-logos-wap .work-logo:first-child {
-  margin-left: 0;
-}
-#page-index .works .work-logos-wap .work-logo .bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 2px;
-  background-color: #36a9e5;
-  opacity: 0;
-}
-#page-index .works .work-logos-wap .work-logo .logo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url(/static/image/lemaker_gray.png) no-repeat center;
-}
-#page-index .works .work-logos-wap .work-logo:hover {
-  background-color: #e8e8e8;
-  transition: all 150ms ease-out;
-  -webkit-transition: all 150ms ease-out;
-  -moz-transition: all 150ms ease-out;
-  -ms-transition: all 150ms ease-out;
-  -o-transition: all 150ms ease-out;
-}
-#page-index .work {
-  padding: 0px 0 70px 0;
-  background-color: greenyellow;
-}
-#page-index .work.aod {
-  background-color: #5dc4ad;
-}
-#page-index .work.aod h1 {
-  color: #FFFFFF;
-}
-#page-index .work.lemaker {
-  background-color: #bfd6d9;
-}
-#page-index .work.zj {
-  background-color: #3382D3;
-}
-#page-index .work.zj h1 {
-  color: #ffffff;
-}
-#page-index .work.tq {
-  background-color: #36a9e5;
-}
-#page-index .work.tq h1 {
-  color: #FFFFFF;
-}
-#page-index .work.lft {
-  background-color: #c8a15b;
-}
-#page-index .work.lft h1 {
-  color: #FFFFFF;
-}
-#page-index .work .image-wap {
-  height: 510px;
-  width: 739px;
-  background: url(/static/image/iMac.png) no-repeat center center;
-  margin: 0 auto;
-  overflow: hidden;
-  position: relative;
-}
-#page-index .work .image-wap img {
-  width: 669px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  position: absolute;
-  top: 35px;
-  left: 35px;
+  padding: 80px 0;
+  line-height: 1.8;
+  font-size: 30px;
+  font-weight: lighter;
+  color: white;
+  background-color: #009be1;
 }
 #page-index .techs img.tech-icons {
   padding-bottom: 70px;
