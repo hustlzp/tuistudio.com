@@ -121,8 +121,9 @@ a:hover {
   margin-right: 20px;
 }
 .footer {
-  background-color: #4f5161;
-  padding: 45px 0;
+  background: url('/static/image/footer-bg.png') no-repeat;
+  background-size: 100% 100%;
+  padding: 125px 0 45px 0;
   line-height: 1;
   margin-top: 80px;
   color: white;
