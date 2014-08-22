@@ -17,6 +17,18 @@
   src: url(/static/fonts/lato-bold-webfont.woff) format('woff');
 }
 @font-face {
+  font-family: 'nexa';
+  font-style: normal;
+  font-weight: lighter;
+  src: url(/static/fonts/nexa-light-webfont.woff) format('woff');
+}
+@font-face {
+  font-family: 'nexa';
+  font-style: normal;
+  font-weight: normal;
+  src: url(/static/fonts/nexa-bold-webfont.woff) format('woff');
+}
+@font-face {
   font-family: 'iconfont';
   src: url('/static/fonts/iconfont.eot');
   src: url('/static/fonts/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('/static/fonts/iconfont.woff') format('woff'), /* chrome、firefox */ url('/static/fonts/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('/static/fonts/iconfont.svg#uxiconfont') format('svg');
