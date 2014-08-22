@@ -393,25 +393,25 @@
     }
   }
 
-  .process {
+  .steps {
     padding-bottom: 80px;
     background-color: #eeeeee;
 
-    p {
-      font-size: 18px;
-      margin-bottom: 25px;
-    }
-
-    img {
-      max-width: 200px;
+    .step {
+      background: white;
       border-radius: 5px;
       cursor: pointer;
       .transition();
+      width: 200px;
+      display: inline-block;
 
       &:hover {
         margin-top: -8px;
       }
 
+      img {
+        width: 200px;
+      }
     }
   }
 

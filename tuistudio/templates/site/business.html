@@ -15,8 +15,7 @@
    <select class="form-control {% if field.errors %}field-error{% endif %}"
            name="{{ field.name }}" id="{{ field.id }}">
       {% for value, text in field.choices %}
-         <option value="{{ value }}"
-                 {% if field.data == value %}selected{% endif %}>
+         <option value="{{ value }}" {% if field.data == value %}selected{% endif %}>
             {{ text }}
          </option>
       {% endfor %}
