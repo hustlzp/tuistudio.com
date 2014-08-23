@@ -151,10 +151,11 @@ a:hover {
   padding-right: 15px;
 }
 .footer .footer-left .links li a {
+  cursor: pointer;
   color: white;
 }
 .footer .footer-left .links li a:hover {
-  color: #36a9e5;
+  text-decoration: underline;
 }
 .footer .footer-left .usa {
   display: block;
@@ -174,9 +175,6 @@ a:hover {
 }
 .footer .footer-left .icons li a {
   color: white;
-}
-.footer .footer-left .icons li a:hover {
-  color: #36a9e5;
 }
 .footer .footer-right {
   text-align: right;
