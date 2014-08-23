@@ -11,7 +11,7 @@
   src: url(/static/fonts/lato-regular-webfont.woff) format('woff');
 }
 @font-face {
-  font-family: 'latobold';
+  font-family: 'lato';
   font-style: normal;
   font-weight: bold;
   src: url(/static/fonts/lato-bold-webfont.woff) format('woff');
@@ -132,7 +132,7 @@ a:hover {
 .navbar .navbar-collapse .navbar-nav.navbar-right:last-child {
   margin-right: 20px;
 }
-.footer-header {
+.footer-header .container {
   height: 77px;
   background: url('/static/image/footer-bg-header.png') no-repeat top right;
 }
