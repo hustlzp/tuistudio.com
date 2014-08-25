@@ -12,7 +12,6 @@ migrate = Migrate(app, db)
 manager.add_command('db', MigrateCommand)
 
 # assets commands
-manager = Manager(app)
 manager.add_command("assets", ManageAssets())
 
 
