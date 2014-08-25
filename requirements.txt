@@ -7,6 +7,10 @@ Flask-Uploads
 Flask-Mail
 Flask-Migrate
 
+Flask-Assets
+jsmin
+cssmin
+
 MySQL-python
 Pillow
 

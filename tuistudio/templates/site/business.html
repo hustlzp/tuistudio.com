@@ -3,12 +3,17 @@
 {% block page_id %}page-business{% endblock %}
 {% block page_title %}Start Your Business | TUI Studio{% endblock %}
 {% block page_css %}
-   {{ link('css/share/fancySelect.css') }}
-   {{ link('css/site/business.css') }}
+   {% assets filters="cssmin", output="gen/business.css",
+      'css/share/fancySelect.css',
+      'css/site/business.css' %}
+      <link rel="stylesheet" href="{{ ASSET_URL }}">
+   {% endassets %}
 {% endblock %}
 {% block page_js %}
-   {{ script('bower_components/fancyselect/fancySelect.js') }}
-   {{ script('js/site/business.js') }}
+   {% assets filters="jsmin", output="gen/business.js",
+      'js/site/business.js' %}
+      <script type="text/javascript" src="{{ ASSET_URL }}"></script>
+   {% endassets %}
 {% endblock %}
 
 {% macro select_field(field) %}

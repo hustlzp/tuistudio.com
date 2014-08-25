@@ -4,6 +4,7 @@ from flask import Flask, request, url_for, g, render_template, session
 from flask_wtf.csrf import CsrfProtect
 from flask.ext.uploads import configure_uploads
 from flask_debugtoolbar import DebugToolbarExtension
+from flask.ext.assets import Environment, Bundle
 from . import config
 
 # convert python's encoding to utf8
@@ -28,6 +29,9 @@ def create_app():
 
     # from .mails import mail
     # mail.init_app(app)
+
+    assets = Environment()
+    assets.init_app(app)
 
     # 注册组件
     register_db(app)
