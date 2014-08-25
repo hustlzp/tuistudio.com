@@ -238,6 +238,7 @@
   line-height: 1.8;
   font-size: 30px;
   color: white;
+  font-weight: lighter;
   background-color: #36a9e5;
 }
 #page-index .techs img.tech-icons {
