@@ -12,6 +12,7 @@ def deploy():
         with prefix('source venv/bin/activate'):
             run('pip install -r requirements.txt')
             run('python manage.py db upgrade')
+            run('python manage.py assets --parse-templates build')
         run('supervisorctl restart tuistudio')
 
 
