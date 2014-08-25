@@ -5,6 +5,7 @@ from tuistudio import config
 def deploy():
     env.host_string = config.HOST_STRING
     with cd('/var/www/tuistudio'):
+        run('git reset --hard HEAD')
         run('git pull')
         run('bower install --allow-root')
         run('bower update --allow-root')
