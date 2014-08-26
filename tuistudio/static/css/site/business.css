@@ -47,6 +47,9 @@
 #page-business h1 {
   margin: 50px 0 40px 0;
 }
+#page-business form {
+  margin-bottom: 50px;
+}
 #page-business .form-wap {
   width: 494px;
 }
