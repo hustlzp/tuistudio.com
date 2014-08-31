@@ -8,6 +8,7 @@
    {% block meta %}{% endblock %}
    <link rel="Shortcut Icon" href="{{ static('image/favicon.png') }}">
 
+   {# css #}
    {% assets filters="cssmin", output="gen/public.css",
       'bower_components/bootstrap/dist/css/bootstrap.min.css',
       'bower_components/font-awesome/css/font-awesome.min.css',
@@ -19,6 +20,7 @@
    {% endassets %}
    {% block page_css %}{% endblock %}
 
+   {# js #}
    {% assets filters="jsmin", output="gen/public.js",
       'bower_components/respond/dest/respond.min.js',
       'bower_components/jquery/dist/jquery.min.js',
@@ -86,60 +88,61 @@
    {% block page_content %}{% endblock %}
 </div>
 
-
-<div class="footer-header">
-   <div class="container"></div>
-</div>
-
 <div class="footer">
-   <div class="container">
-      <div class="footer-left pull-left">
-         <div class="clearfix">
-            <ul class="links pull-left list-unstyled list-inline">
-               <li><a>Legal</a></li>
-               <li><a>Privacy</a></li>
-               <li><a>Terms</a></li>
-               <li><a>Jobs</a></li>
-               <li><a>Enterprise</a></li>
-               <li><a>Partners</a></li>
-               <li><a href="http://wiki.tuistudio.com" target="_blank">Wiki</a></li>
-               <li><a>Blog</a></li>
+   <div class="footer-header">
+      <div class="container"></div>
+   </div>
+
+   <div class="footer-content">
+      <div class="container">
+         <div class="footer-left pull-left">
+            <div class="clearfix">
+               <ul class="links pull-left list-unstyled list-inline">
+                  <li><a>Legal</a></li>
+                  <li><a>Privacy</a></li>
+                  <li><a>Terms</a></li>
+                  <li><a>Jobs</a></li>
+                  <li><a>Enterprise</a></li>
+                  <li><a>Partners</a></li>
+                  <li><a href="http://wiki.tuistudio.com" target="_blank">Wiki</a></li>
+                  <li><a>Blog</a></li>
+               </ul>
+
+               <img class="usa pull-left" src="{{ static('image/usa.png') }}" alt="USA"/>
+            </div>
+
+            <div class="cp">© 2013-2014 TUI Studio. ALL RIGHTS RESERVED.</div>
+
+            <ul class="icons list-inline list-unstyled">
+               <li>
+                  <a href="http://twitter.com" target="_blank">
+                     <span class="fa fa-twitter"></span>
+                  </a>
+               </li>
+               <li>
+                  <a href="https://dribbble.com/tuistudio" target="_blank">
+                     <span class="fa fa-dribbble"></span>
+                  </a>
+               </li>
+               <li>
+                  <a href="https://github.com/tuistudio" target="_blank">
+                     <span class="fa fa-github"></span>
+                  </a>
+               </li>
             </ul>
-
-            <img class="usa pull-left" src="{{ static('image/usa.png') }}" alt="USA"/>
          </div>
 
-         <div class="cp">© 2013-2014 TUI Studio. ALL RIGHTS RESERVED.</div>
+         <div class="footer-right pull-right">
+            <div class="logo">
+               <span class="text-main">TUI</span> Studio
+            </div>
 
-         <ul class="icons list-inline list-unstyled">
-            <li>
-               <a href="http://twitter.com" target="_blank">
-                  <span class="fa fa-twitter"></span>
-               </a>
-            </li>
-            <li>
-               <a href="https://dribbble.com/tuistudio" target="_blank">
-                  <span class="fa fa-dribbble"></span>
-               </a>
-            </li>
-            <li>
-               <a href="https://github.com/tuistudio" target="_blank">
-                  <span class="fa fa-github"></span>
-               </a>
-            </li>
-         </ul>
-      </div>
-
-      <div class="footer-right pull-right">
-         <div class="logo">
-            <span class="text-main">TUI</span> Studio
+            {#         <div class="slogan">#}
+            {#            Let our workforce finish the last mile#}
+            {#            <br>#}
+            {#            so can you connect with your clients for the long haul.#}
+            {#         </div>#}
          </div>
-
-         {#         <div class="slogan">#}
-         {#            Let our workforce finish the last mile#}
-         {#            <br>#}
-         {#            so can you connect with your clients for the long haul.#}
-         {#         </div>#}
       </div>
    </div>
 </div>

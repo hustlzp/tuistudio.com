@@ -44,8 +44,13 @@
   -webkit-text-stroke-width: 0.2px;
   -moz-osx-font-smoothing: grayscale;
 }
+html {
+  position: relative;
+  min-height: 100%;
+}
 body {
   margin-top: 81px;
+  margin-bottom: 249px;
 }
 a {
   color: #333333;
@@ -132,11 +137,17 @@ a:hover {
 .navbar .navbar-collapse .navbar-nav.navbar-right:last-child {
   margin-right: 20px;
 }
-.footer-header .container {
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 249px;
+}
+.footer .footer-header .container {
   height: 77px;
   background: url('/static/image/footer-bg-header.png') no-repeat top right;
 }
-.footer {
+.footer .footer-content {
   background: url('/static/image/footer-bg.png') no-repeat;
   background-size: 100% 100%;
   padding: 45px 0 45px 0;
@@ -144,46 +155,46 @@ a:hover {
   margin-top: 0px;
   color: white;
 }
-.footer .footer-left .links {
+.footer .footer-content .footer-left .links {
   margin-bottom: 18px;
 }
-.footer .footer-left .links li {
+.footer .footer-content .footer-left .links li {
   padding-right: 15px;
 }
-.footer .footer-left .links li a {
+.footer .footer-content .footer-left .links li a {
   cursor: pointer;
   color: white;
 }
-.footer .footer-left .links li a:hover {
+.footer .footer-content .footer-left .links li a:hover {
   text-decoration: underline;
 }
-.footer .footer-left .usa {
+.footer .footer-content .footer-left .usa {
   display: block;
   margin-left: 12px;
   height: 16px;
   margin-top: 0px;
 }
-.footer .footer-left .cp {
+.footer .footer-content .footer-left .cp {
   margin-bottom: 18px;
 }
-.footer .footer-left .icons {
+.footer .footer-content .footer-left .icons {
   font-size: 18px;
   margin-bottom: 0;
 }
-.footer .footer-left .icons li {
+.footer .footer-content .footer-left .icons li {
   padding-right: 8px;
 }
-.footer .footer-left .icons li a {
+.footer .footer-content .footer-left .icons li a {
   color: white;
 }
-.footer .footer-right {
+.footer .footer-content .footer-right {
   text-align: right;
 }
-.footer .footer-right .logo {
+.footer .footer-content .footer-right .logo {
   font-size: 22px;
   font-weight: lighter;
   margin-bottom: 15px;
 }
-.footer .footer-right .slogan {
+.footer .footer-content .footer-right .slogan {
   line-height: 20px;
 }
