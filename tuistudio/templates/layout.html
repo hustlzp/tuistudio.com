@@ -9,15 +9,13 @@
    <link rel="Shortcut Icon" href="{{ static('image/favicon.png') }}">
 
    {# css #}
-   {% assets filters="cssmin", output="gen/public.css",
-      'bower_components/bootstrap/dist/css/bootstrap.min.css',
-      'bower_components/font-awesome/css/font-awesome.min.css',
-      'css/bootstrap.theme.css',
-      'css/common.css',
-      'css/component.css',
-      'css/layout.css' %}
-      <link rel="stylesheet" href="{{ ASSET_URL }}">
-   {% endassets %}
+   {{ link('bower_components/bootstrap/dist/css/bootstrap.min.css') }}
+   {{ link('bower_components/font-awesome/css/font-awesome.min.css') }}
+   {{ link('css/bootstrap.theme.css') }}
+   {{ link('css/common.css') }}
+   {{ link('css/component.css') }}
+   {{ link('css/layout.css') }}
+
    {% block page_css %}{% endblock %}
 
    {# js #}
